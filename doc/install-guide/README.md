@@ -55,7 +55,7 @@ Your coins will be safe if the masternode server gets hacked.
 1. Start putty and login as root user. (Root password and server ip address is in vultr overview tab)
 1. Paste this command and answer the questions:
 ```
-wget https://github.com/SyndicateLtd/SyndicateQT/blob/master/doc/install-guide/synx.py && python synx.py
+wget https://raw.githubusercontent.com/SyndicateLtd/SyndicateQT/master/doc/install-guide/synx.py && python synx.py
 ```
 
 ### 2.4 Add masternode on the desktop wallet

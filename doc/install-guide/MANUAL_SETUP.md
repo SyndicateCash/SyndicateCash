@@ -83,7 +83,7 @@ Your coins will be safe if the masternode server gets hacked.
 	- Connect to the server using putty (Load the saved session)
 	- Download the install script: <br/>
 		```
-		wget https://github.com/SyndicateLtd/SyndicateQT/blob/master/doc/install-guide/SYNX_HEADLESS_UBUNTU_V2.sh
+		wget https://raw.githubusercontent.com/SyndicateLtd/SyndicateQT/master/doc/install-guide/SYNX_HEADLESS_UBUNTU_V2.sh
 		```
 	- Add executable flag: `chmod +x ./SYNX_HEADLESS_UBUNTU_V2.sh`
 	- Run the script and wait a few minutes until it completes: `./SYNX_HEADLESS_UBUNTU_V2.sh` (Set the rpc username and the rpc password, rpc port = 22350, synx port = 9999)
