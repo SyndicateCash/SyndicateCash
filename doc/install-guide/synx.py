@@ -119,6 +119,9 @@ def compile_wallet():
         f.write(line)
         f.close()
 
+    print_info("Installing wallet build dependencies...")
+    run_command("apt-get --assume-yes install git unzip build-essential autoconf automake libtool libboost-all-dev libgmp-dev libssl-dev libcurl4-openssl-dev libevent-dev libdb-dev libdb++-dev git")
+
     is_compile = True
     if os.path.isfile('/usr/local/bin/syndicated'):
         print_warning('Wallet already installed on the system')
