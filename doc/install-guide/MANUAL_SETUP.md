@@ -1,5 +1,5 @@
 # Syndicate Manual Setup Guide
-Last update: 2017.09.11
+Last update: 2018.02.12
 
 Use this instruction to install the wallet, fix wallet issues and setup one/multiple masternode(s).
 This guide is for the creation of separate Controller Wallet & Masternode.
@@ -83,16 +83,16 @@ Your coins will be safe if the masternode server gets hacked.
 	- Connect to the server using putty (Load the saved session)
 	- Download the install script: <br/>
 		```
-		wget https://raw.githubusercontent.com/SyndicateLabs/SyndicateAutoVPS/master/SYNX_HEADLESS_UBUNTU_V1.sh
+		wget https://github.com/SyndicateLtd/SyndicateQT/blob/master/doc/install-guide/SYNX_HEADLESS_UBUNTU_V2.sh
 		```
-	- Add executable flag: `chmod +x ./SYNX_HEADLESS_UBUNTU_V1.sh`
-	- Run the script and wait a few minutes until it completes: `./SYNX_HEADLESS_UBUNTU_V1.sh` (Set the rpc username and the rpc password, rpc port = 22350, synx port = 9999)
-	- Stop Syndicated: `Syndicated stop`
+	- Add executable flag: `chmod +x ./SYNX_HEADLESS_UBUNTU_V2.sh`
+	- Run the script and wait a few minutes until it completes: `./SYNX_HEADLESS_UBUNTU_V2.sh` (Set the rpc username and the rpc password, rpc port = 22350, synx port = 9999)
+	- Stop syndicated: `syndicated stop`
 	- Intall unzip: `apt-get install unzip`
 1. Create a new user: `adduser mn1`. Note: the password is invisible when you are typing it
 1. Add user to sudo group: `usermod -a -G sudo mn1`
 1. Login to the user: `su mn1`
-1. Start the wallet: `Syndicated`
+1. Start the wallet: `syndicated`
 1. Set the rpc username and password on the desktop conf file `%appdata%/Syndicate/Syndicate.conf`
 
     ```
@@ -122,8 +122,8 @@ Your coins will be safe if the masternode server gets hacked.
 1. Download the boostrap file: `cd && wget https://transfer.sh/t2Xo2/Syndicate_blockchain_2017_09_10.zip`
 1. Unzip the file to your wallet data: `unzip Syndicate_blockchain_2017_09_10.zip -d .Syndicate`
 1. Delete peers.dat file: `rm /home/mn1/.Syndicate/peers.dat`
-1. Start the wallet: `Syndicated`
-1. Wait for sync (1h-12h depending on the connections). Check to current block using `Syndicated getinfo` and [http://synx.cryptophi.com/](http://synx.cryptophi.com/)
+1. Start the wallet: `syndicated`
+1. Wait for sync (1h-12h depending on the connections). Check to current block using `syndicate-cli getinfo` and [http://synx.cryptophi.com/](http://synx.cryptophi.com/)
 
 ### 1.7 Add masternode on the desktop wallet
 
@@ -150,8 +150,8 @@ Your coins will be safe if the masternode server gets hacked.
 	- Increase EVERY (rpcport, port, masternodeaddr) port number by X-th
 	- Set the new masternodeprivkey
 1. Add the new port to firewall: `sudo ufw allow [NewPort]`
-1. Start the wallet: `Syndicated`
-1. Wait for sync (1h-12h depending on the connections). Check to current block using `Syndicated getinfo` and [http://synx.cryptophi.com/](http://synx.cryptophi.com/)
+1. Start the wallet: `syndicated`
+1. Wait for sync (1h-12h depending on the connections). Check to current block using `syndicate-cli getinfo` and [http://synx.cryptophi.com/](http://synx.cryptophi.com/)
 1. Repeat 2.7 step
 
 ## 3. The last and the most important step

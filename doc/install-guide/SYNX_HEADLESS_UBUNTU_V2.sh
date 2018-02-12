@@ -22,20 +22,18 @@ swapon /swapfile
 echo -e "/swapfile   none    swap    sw    0   0 \n" >> /etc/fstab
 
 apt-get update
-apt-get -y install build-essential autoconf automake libtool libboost-all-dev libgmp-dev libssl-dev libcurl4-openssl-dev libevent-dev libdb-dev libdb++-dev git
 
 cd /opt 
 rm -rf SyndicateQT
-git clone https://github.com/SyndicateLabs/SyndicateQT
-cd SyndicateQT/src
-chmod +x leveldb/build_detect_platform
-chmod +x secp256k1/autogen.sh
-make -f makefile.unix USE_UPNP=-
-strip Syndicated
-cp Syndicated /usr/local/bin
-make -f makefile.unix clean
+mkdir SyndicateQT
+cd SyndicateQT
+wget https://github.com/SyndicateLtd/SyndicateQT/releases/download/v1.9.9/Syndicate-1.9.9-x86_64-linux-gnu.tar.gz
+tar -zxvf Syndicate-1.9.9-x86_64-linux-gnu.tar.gz
+cp Syndicate-1.9.9-x86_64-linux-gnu/syndicated /usr/local/bin/
+cp Syndicate-1.9.9-x86_64-linux-gnu/syndicate-cli /usr/local/bin/
+cp Syndicate-1.9.9-x86_64-linux-gnu/syndicate-tx /usr/local/bin/
 cd
-Syndicated
+syndicated
 sleep 10
 echo -n "Key In a User Name for RPC access (preferably not your computer username) and press [ENTER]: "
 read usrnam
@@ -46,8 +44,8 @@ read rpcprt
 echo -n "Key In the port your want the SYNX Daemon to listen on  press[ENTER]: "
 read synxprt
 echo -e "rpcuser=$usrnam \nrpcpassword=$usrpas \nrpcallowip=127.0.0.1 \nrpcport=$rpcprt \nport=$synxprt \nserver=1 \nlisten=1 \ndaemon=1 \nlogtimestamps=1 \nmnconflock=0 \naddnode=45.63.43.122:9999 \naddnode=45.32.156.245:9999 \naddnode=108.61.174.206:9999 \naddnode=45.63.62.79:9999 \naddnode=45.63.52.48:9999 \naddnode=45.63.111.165:9999 \naddnode=104.238.133.191:9999 \naddnode=45.32.148.12:9999 \naddnode=45.32.225.152:9999 \naddnode=45.63.27.232:9999 \naddnode=104.238.151.49:9999 \n" > ~/.Syndicate/Syndicate.conf
-Syndicated
+syndicated
 echo "Hold your horses for 10 sec"
 sleep 10
-Syndicated getinfo
+syndicated-cli getinfo
 echo "Need Help? ... Hop on Slack or BTCT https://bitcointalk.org/index.php?topic=1511215.0;topicseen and the community members WILL help you"
