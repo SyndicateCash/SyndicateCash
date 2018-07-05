@@ -1,5 +1,5 @@
 // Copyright (c) 2009-2012 The Darkcoin developers
-// Copyright (c) 2017 Empinel / The SYNX Developers
+// Copyright (c) 2017 Empinel / The XSYN Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -10,7 +10,7 @@
 #include "clientversion.h"
 
 //
-// Bootup the masternode, look for a 5000 SYNX input and register on the network
+// Bootup the masternode, look for a 5000 XSYN input and register on the network
 //
 void CActiveMasternode::ManageStatus()
 {

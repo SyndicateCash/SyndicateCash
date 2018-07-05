@@ -418,7 +418,7 @@ QString AddressTableModel::addRow(const QString &type, const QString &label, con
             if (!wallet->NewStealthAddress(sError, strLabel, newStealthAddr)
                 || !wallet->AddStealthAddress(newStealthAddr))
             {
-                editStatus = KEY_GENERATSYNX_FAILURE;
+                editStatus = KEY_GENERATXSYN_FAILURE;
                 return QString();
             }
             strAddress = newStealthAddr.Encoded();
@@ -427,7 +427,7 @@ QString AddressTableModel::addRow(const QString &type, const QString &label, con
             CPubKey newKey;
             if(!wallet->GetKeyFromPool(newKey))
             {
-                editStatus = KEY_GENERATSYNX_FAILURE;
+                editStatus = KEY_GENERATXSYN_FAILURE;
                 return QString();
             }
             strAddress = CSyndicateAddress(newKey.GetID()).ToString();

@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef SYNX_CRYPTO_HMAC_SHA256_H
-#define SYNX_CRYPTO_HMAC_SHA256_H
+#ifndef XSYN_CRYPTO_HMAC_SHA256_H
+#define XSYN_CRYPTO_HMAC_SHA256_H
 
 #include "crypto/sha256.h"
 
@@ -29,4 +29,4 @@ public:
     void Finalize(unsigned char hash[OUTPUT_SIZE]);
 };
 
-#endif // SYNX_CRYPTO_HMAC_SHA256_H
+#endif // XSYN_CRYPTO_HMAC_SHA256_H

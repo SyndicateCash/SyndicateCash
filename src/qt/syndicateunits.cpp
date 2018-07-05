@@ -18,9 +18,9 @@ SyndicateUnits::SyndicateUnits(QObject *parent):
 QList<SyndicateUnits::Unit> SyndicateUnits::availableUnits()
 {
     QList<SyndicateUnits::Unit> unitlist;
-    unitlist.append(SYNX);
-    unitlist.append(mSYNX);
-    unitlist.append(uSYNX);
+    unitlist.append(XSYN);
+    unitlist.append(mXSYN);
+    unitlist.append(uXSYN);
     return unitlist;
 }
 
@@ -28,9 +28,9 @@ bool SyndicateUnits::valid(int unit)
 {
     switch(unit)
     {
-    case SYNX:
-    case mSYNX:
-    case uSYNX:
+    case XSYN:
+    case mXSYN:
+    case uXSYN:
         return true;
     default:
         return false;
@@ -41,9 +41,9 @@ QString SyndicateUnits::name(int unit)
 {
     switch(unit)
     {
-    case SYNX: return QString("SYNX");
-    case mSYNX: return QString("mSYNX");
-    case uSYNX: return QString::fromUtf8("μSYNX");
+    case XSYN: return QString("XSYN");
+    case mXSYN: return QString("mXSYN");
+    case uXSYN: return QString::fromUtf8("μXSYN");
     default: return QString("???");
     }
 }
@@ -52,9 +52,9 @@ QString SyndicateUnits::description(int unit)
 {
     switch(unit)
     {
-    case SYNX: return QString("Synxs");
-    case mSYNX: return QString("Milli-Synxs (1 / 1,000)");
-    case uSYNX: return QString("Micro-Synxs (1 / 1,000,000)");
+    case XSYN: return QString("Synxs");
+    case mXSYN: return QString("Milli-Synxs (1 / 1,000)");
+    case uXSYN: return QString("Micro-Synxs (1 / 1,000,000)");
     default: return QString("???");
     }
 }
@@ -63,9 +63,9 @@ qint64 SyndicateUnits::factor(int unit)
 {
     switch(unit)
     {
-    case SYNX:  return 100000000;
-    case mSYNX: return 100000;
-    case uSYNX: return 100;
+    case XSYN:  return 100000000;
+    case mXSYN: return 100000;
+    case uXSYN: return 100;
     default:   return 100000000;
     }
 }
@@ -74,9 +74,9 @@ int SyndicateUnits::amountDigits(int unit)
 {
     switch(unit)
     {
-    case SYNX: return 8; // 21,000,000 (# digits, without commas)
-    case mSYNX: return 11; // 21,000,000,000
-    case uSYNX: return 14; // 21,000,000,000,000
+    case XSYN: return 8; // 21,000,000 (# digits, without commas)
+    case mXSYN: return 11; // 21,000,000,000
+    case uXSYN: return 14; // 21,000,000,000,000
     default: return 0;
     }
 }
@@ -85,9 +85,9 @@ int SyndicateUnits::decimals(int unit)
 {
     switch(unit)
     {
-    case SYNX: return 8;
-    case mSYNX: return 5;
-    case uSYNX: return 2;
+    case XSYN: return 8;
+    case mXSYN: return 5;
+    case uXSYN: return 2;
     default: return 0;
     }
 }

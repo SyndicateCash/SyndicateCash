@@ -23,8 +23,8 @@
 
 using namespace boost;
 
-const int SYNX_IPC_CONNECT_TIMEOUT = 1000; // milliseconds
-const QString SYNX_IPC_PREFIX("syndicate:");
+const int XSYN_IPC_CONNECT_TIMEOUT = 1000; // milliseconds
+const QString XSYN_IPC_PREFIX("syndicate:");
 
 //
 // Create a name that is unique for:
@@ -64,7 +64,7 @@ bool PaymentServer::ipcSendCommandLine()
     const QStringList& args = qApp->arguments();
     for (int i = 1; i < args.size(); i++)
     {
-        if (!args[i].startsWith(SYNX_IPC_PREFIX, Qt::CaseInsensitive))
+        if (!args[i].startsWith(XSYN_IPC_PREFIX, Qt::CaseInsensitive))
             continue;
         savedPaymentRequests.append(args[i]);
     }
@@ -73,7 +73,7 @@ bool PaymentServer::ipcSendCommandLine()
     {
         QLocalSocket* socket = new QLocalSocket();
         socket->connectToServer(ipcServerName(), QIODevice::WriteOnly);
-        if (!socket->waitForConnected(SYNX_IPC_CONNECT_TIMEOUT))
+        if (!socket->waitForConnected(XSYN_IPC_CONNECT_TIMEOUT))
             return false;
 
         QByteArray block;
@@ -84,7 +84,7 @@ bool PaymentServer::ipcSendCommandLine()
         socket->write(block);
         socket->flush();
 
-        socket->waitForBytesWritten(SYNX_IPC_CONNECT_TIMEOUT);
+        socket->waitForBytesWritten(XSYN_IPC_CONNECT_TIMEOUT);
         socket->disconnectFromServer();
         delete socket;
         fResult = true;

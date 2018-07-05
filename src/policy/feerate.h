@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef SYNX_POLICY_FEERATE_H
-#define SYNX_POLICY_FEERATE_H
+#ifndef XSYN_POLICY_FEERATE_H
+#define XSYN_POLICY_FEERATE_H
 
 #include "serialize.h"
 
@@ -52,4 +52,4 @@ public:
     )
 };
 
-#endif //  SYNX_POLICY_FEERATE_H
+#endif //  XSYN_POLICY_FEERATE_H

@@ -44,7 +44,7 @@ void QRCodeDialog::setModel(OptionsModel *model)
     if (model)
         connect(model, SIGNAL(displayUnitChanged(int)), this, SLOT(updateDisplayUnit()));
 
-    // update the display unit, to not use the default ("SYNX")
+    // update the display unit, to not use the default ("XSYN")
     updateDisplayUnit();
 }
 
@@ -92,8 +92,8 @@ QString QRCodeDialog::getURI()
     {
         if (ui->lnReqAmount->validate())
         {
-            // even if we allow a non SYNX unit input in lnReqAmount, we generate the URI with SYNX as unit (as defined in BIP21)
-            ret += QString("?amount=%1").arg(SyndicateUnits::format(SyndicateUnits::SYNX, ui->lnReqAmount->value()));
+            // even if we allow a non XSYN unit input in lnReqAmount, we generate the URI with XSYN as unit (as defined in BIP21)
+            ret += QString("?amount=%1").arg(SyndicateUnits::format(SyndicateUnits::XSYN, ui->lnReqAmount->value()));
             paramCount++;
         }
         else

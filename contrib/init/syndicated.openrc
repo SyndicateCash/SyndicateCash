@@ -18,8 +18,8 @@ SYNDICATED_BIN=${SYNDICATED_BIN:-/usr/bin/syndicated}
 SYNDICATED_NICE=${SYNDICATED_NICE:-${NICELEVEL:-0}}
 SYNDICATED_OPTS="${SYNDICATED_OPTS:-${SYNDICATE_OPTS}}"
 
-name="Syndicate Core Daemon"
-description="Syndicate cryptocurrency P2P network daemon"
+name="Syndicate Cash Daemon"
+description="Syndicate Cash cryptocurrency P2P network daemon"
 
 command="/usr/bin/syndicated"
 command_args="-pid=\"${SYNDICATED_PIDFILE}\" \
@@ -84,7 +84,7 @@ checkconfig()
 		eerror "It is recommended that you also set alertnotify so you are "
 		eerror "notified of problems:"
 		eerror ""
-		eerror "ie: alertnotify=echo %%s | mail -s \"Syndicate Alert\"" \
+		eerror "ie: alertnotify=echo %%s | mail -s \"Syndicate Cash Alert\"" \
 			"admin@foo.com"
 		eerror ""
 		return 1

@@ -1,6 +1,6 @@
 UNIX BUILD NOTES
 ====================
-Some notes on how to build Syndicate Core in Unix.
+Some notes on how to build Syndicate Cash in Unix.
 
 (For BSD specific instructions, see [build-openbsd.md](build-openbsd.md) and/or
 [build-netbsd.md](build-netbsd.md))
@@ -56,7 +56,7 @@ Memory Requirements
 --------------------
 
 C++ compilers are memory-hungry. It is recommended to have at least 1.5 GB of
-memory available when compiling Syndicate Core. On systems with less, gcc can be
+memory available when compiling Syndicate Cash. On systems with less, gcc can be
 tuned to conserve memory with additional CXXFLAGS:
 
 
@@ -100,7 +100,7 @@ BerkeleyDB 5.1 or later, which break binary wallet compatibility with the distri
 are based on BerkeleyDB 4.8. If you do not care about wallet compatibility,
 pass `--with-incompatible-bdb` to configure.
 
-See the section "Disable-wallet mode" to build Syndicate Core without wallet.
+See the section "Disable-wallet mode" to build Syndicate Cash without wallet.
 
 Optional (see --with-miniupnpc and --enable-upnp-default):
 
@@ -267,7 +267,7 @@ Setup and Build Example: Arch Linux
 This example lists the steps necessary to setup and build a command line only, non-wallet distribution of the latest changes on Arch Linux:
 
     pacman -S git base-devel boost libevent python
-    git clone https://github.com/syndicate/syndicate.git
+    git clone https://github.com/SyndicateCash/SyndicateCash.git
     cd syndicate/
     ./autogen.sh
     ./configure --disable-wallet --without-gui --without-miniupnpc
@@ -277,7 +277,7 @@ Note:
 Enabling wallet support requires either compiling against a Berkeley DB newer than 4.8 (package `db`) using `--with-incompatible-bdb`,
 or building and depending on a local version of Berkeley DB 4.8. The readily available Arch Linux packages are currently built using
 `--with-incompatible-bdb` according to the [PKGBUILD](https://projects.archlinux.org/svntogit/community.git/tree/syndicate/trunk/PKGBUILD).
-As mentioned above, when maintaining portability of the wallet between the standard Syndicate Core distributions and independently built
+As mentioned above, when maintaining portability of the wallet between the standard Syndicate Cash distributions and independently built
 node software is desired, Berkeley DB 4.8 must be used.
 
 

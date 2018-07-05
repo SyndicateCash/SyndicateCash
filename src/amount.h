@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef SYNX_AMOUNT_H
-#define SYNX_AMOUNT_H
+#ifndef XSYN_AMOUNT_H
+#define XSYN_AMOUNT_H
 
 #include "serialize.h"
 
@@ -22,7 +22,7 @@ static const CAmount CENT = 1000000;
 /** No amount larger than this (in satoshi) is valid.
  *
  * Note that this constant is *not* the total money supply, which in Syndicate
- * currently happens to be less than 21,000,000 SYNX for various reasons, but
+ * currently happens to be less than 21,000,000 XSYN for various reasons, but
  * rather a sanity check. As this sanity check is used by consensus-critical
  * validation code, the exact value of the MAX_MONEY constant is consensus
  * critical; in unusual circumstances like a(nother) overflow bug that allowed
@@ -38,4 +38,4 @@ static const CAmount CENT = 1000000;
 static const CAmount MAX_MONEY = 38600000 * COIN; //fix correct amount of coins
 inline bool MoneyRange(const CAmount& nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
 
-#endif //  SYNX_AMOUNT_H
+#endif //  XSYN_AMOUNT_H

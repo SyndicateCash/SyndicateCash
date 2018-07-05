@@ -139,7 +139,7 @@ bool parseSyndicateURI(const QUrl &uri, SendCoinsRecipient *out)
         {
             if(!i->second.isEmpty())
             {
-                if(!SyndicateUnits::parse(SyndicateUnits::SYNX, i->second, &rv.amount))
+                if(!SyndicateUnits::parse(SyndicateUnits::XSYN, i->second, &rv.amount))
                 {
                     return false;
                 }
@@ -693,7 +693,7 @@ HelpMessageBox::HelpMessageBox(QWidget *parent) :
         tr("Usage:") + "\n" +
         "  syndicate-Qt [" + tr("command-line options") + "]                     " + "\n";
 
-    coreOptions = QString::fromStdString(HelpMessage(HMM_SYNX_QT));
+    coreOptions = QString::fromStdString(HelpMessage(HMM_XSYN_QT));
 
     uiOptions = tr("UI options") + ":\n" +
         "  -lang=<lang>           " + tr("Set language, for example \"de_DE\" (default: system locale)") + "\n" +
@@ -727,35 +727,35 @@ void HelpMessageBox::showOrPrint()
 
 void SetBlackThemeQSS(QApplication& app)
 {
-    app.setStyleSheet("QWidget        { background: rgb(41,44,48); }"
+    app.setStyleSheet("QWidget        { background: rgb(73,69,61); }"
                       "QFrame         { border: none; }"
-                      "QComboBox      { color: rgb(255,255,255); }"
-                      "QComboBox QAbstractItemView::item { color: rgb(255,255,255); }"
-                      "QPushButton    { background: rgb(226,189,121); color: rgb(21,21,21); }"
-                      "QDoubleSpinBox { background: rgb(63,67,72); color: rgb(255,255,255); border-color: rgb(194,194,194); }"
-                      "QLineEdit      { background: rgb(63,67,72); color: rgb(255,255,255); border-color: rgb(194,194,194); }"
-                      "QTextEdit      { background: rgb(63,67,72); color: rgb(255,255,255); }"
-                      "QPlainTextEdit { background: rgb(63,67,72); color: rgb(255,255,255); }"
-                      "QMenuBar       { background: rgb(41,44,48); color: rgb(110,116,126); }"
-                      "QMenu          { background: rgb(30,32,36); color: rgb(222,222,222); }"
-                      "QMenu::item:selected { background-color: rgb(48,140,198); }"
-                      "QLabel         { color: rgb(120,127,139); }"
+                      "QComboBox      { color: rgb(0,0,0); }"
+                      "QComboBox QAbstractItemView::item { color: rgb(0,0,0); }"
+                      "QPushButton    { background: rgb(87,109,150); color: rgb(17,17,17); }"
+                      "QDoubleSpinBox { background: rgb(110,104,95); color: rgb(0,0,0); border-color: rgb(155,155,155); }"
+                      "QLineEdit      { background: rgb(110,104,95); color: rgb(0,0,0); border-color: rgb(155,155,155); }"
+                      "QTextEdit      { background: rgb(110,104,95); color: rgb(0,0,0); }"
+                      "QPlainTextEdit { background: rgb(110,104,95); color: rgb(0,0,0); }"
+                      "QMenuBar       { background: rgb(73,69,61); color: rgb(190,181,163); }"
+                      "QMenu          { background: rgb(54,51,44); color: rgb(178,178,178); }"
+                      "QMenu::item:selected { background-color: rgb(40,115,163); }"
+                      "QLabel         { color: rgb(119,127,138); }"
                       "QScrollBar     { color: rgb(255,255,255); }"
-                      "QCheckBox      { color: rgb(120,127,139); }"
-                      "QRadioButton   { color: rgb(120,127,139); }"
-                      "QTabBar::tab   { color: rgb(120,127,139); border: 1px solid rgb(78,79,83); border-bottom: none; padding: 5px; }"
-                      "QTabBar::tab:selected  { background: rgb(41,44,48); }"
-                      "QTabBar::tab:!selected { background: rgb(24,26,30); margin-top: 2px; }"
-                      "QTabWidget::pane { border: 1px solid rgb(78,79,83); }"
-                      "QToolButton    { background: rgb(30,32,36); color: rgb(116,122,134); border: none; border-left-color: rgb(30,32,36); border-left-style: solid; border-left-width: 6px; margin-top: 8px; margin-bottom: 8px; }"
-                      "QToolButton:checked { color: rgb(255,255,255); border: none; border-left-color: rgb(215,173,94); border-left-style: solid; border-left-width: 6px; }"
-                      "QProgressBar   { color: rgb(149,148,148); border-color: rgb(255,255,255); border-width: 3px; border-style: solid; }"
-                      "QProgressBar::chunk { background: rgb(255,255,255); }"
-                      "QTreeView::item { background: rgb(41,44,48); color: rgb(212,213,213); }"
-                      "QTreeView::item:selected { background-color: rgb(48,140,198); }"
-                      "QTableView     { background: rgb(66,71,78); color: rgb(212,213,213); gridline-color: rgb(157,160,165); }"
-                      "QHeaderView::section { background: rgb(29,34,39); color: rgb(255,255,255); }"
-                      "QToolBar       { background: rgb(30,32,36); border: none; }");
+                      "QCheckBox      { color: rgb(119,127,138); }"
+                      "QRadioButton   { color: rgb(119,127,138); }"
+                      "QTabBar::tab   { color: rgb(119,127,138); border: 1px solid rgb(122,119,114); border-bottom: none; padding: 5px; }"
+                      "QTabBar::tab:selected  { background: rgb(73,69,61); }"
+                      "QTabBar::tab:!selected { background: rgb(45,42,35); margin-top: 2px; }"
+                      "QTabWidget::pane { border: 1px solid rgb(122,119,114); }"
+                      "QToolButton    { background: rgb(54,51,44); color: rgb(201,191,171); border: none; border-left-color: rgb(54,51,44); border-left-style: solid; border-left-width: 6px; margin-top: 8px; margin-bottom: 8px; }"
+                      "QToolButton:checked { color: rgb(0,0,0); border: none; border-left-color: rgb(71,95,143); border-left-style: solid; border-left-width: 6px; }"
+                      "QProgressBar   { color: rgb(118,119,118); border-color: rgb(0,0,0); border-width: 3px; border-style: solid; }"
+                      "QProgressBar::chunk { background: rgb(0,0,0); }"
+                      "QTreeView::item { background: rgb(73,69,61); color: rgb(255,254,254); }"
+                      "QTreeView::item:selected { background-color: rgb(255,164,50); }"
+                      "QTableView     { background: rgb(119,111,99); color: rgb(255,254,254); gridline-color: rgb(170,178,163); }"
+                      "QHeaderView::section { background: rgb(60,53,43); color: rgb(0,0,0); }"
+                      "QToolBar       { background: rgb(54,51,44); border: none; }");
 }
 
 void setClipboard(const QString& str)

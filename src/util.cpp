@@ -1060,11 +1060,11 @@ std::string DateTimeStrFormat(const char* pszFormat, int64_t nTime)
 
 std::string CopyrightHolders(const std::string& strPrefix)
 {
-    std::string strCopyrightHolders = strPrefix + "The Syndicate Core developers";
+    std::string strCopyrightHolders = strPrefix + "The Syndicate Cash developers";
 
-    // Check for untranslated substitution to make sure Syndicate Core copyright is not removed by accident
-//    if (strprintf(COPYRIGHT_HOLDERS, COPYRIGHT_HOLDERS_SUBSTITUTION).find("Syndicate Core") == std::string::npos) {
-//        strCopyrightHolders += "\n" + strPrefix + "The Syndicate Core developers";
+    // Check for untranslated substitution to make sure Syndicate Cash copyright is not removed by accident
+//    if (strprintf(COPYRIGHT_HOLDERS, COPYRIGHT_HOLDERS_SUBSTITUTION).find("Syndicate Cash") == std::string::npos) {
+//        strCopyrightHolders += "\n" + strPrefix + "The Syndicate Cash developers";
 //    }
     return strCopyrightHolders;
 }

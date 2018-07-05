@@ -246,8 +246,8 @@ bool CCoinsViewCache::HaveInputs(const CTransaction& tx) const
 }
 
 /*
-static const size_t MIN_TRANSACTSYNX_OUTPUT_WEIGHT = WITNESS_SCALE_FACTOR * ::GetSerializeSize(CTxOut(), SER_NETWORK, PROTOCOL_VERSION);
-static const size_t MAX_OUTPUTS_PER_BLOCK = MAX_BLOCK_WEIGHT / MIN_TRANSACTSYNX_OUTPUT_WEIGHT;
+static const size_t MIN_TRANSACTXSYN_OUTPUT_WEIGHT = WITNESS_SCALE_FACTOR * ::GetSerializeSize(CTxOut(), SER_NETWORK, PROTOCOL_VERSION);
+static const size_t MAX_OUTPUTS_PER_BLOCK = MAX_BLOCK_WEIGHT / MIN_TRANSACTXSYN_OUTPUT_WEIGHT;
 
 const Coin& AccessByTxid(const CCoinsViewCache& view, const uint256& txid)
 {

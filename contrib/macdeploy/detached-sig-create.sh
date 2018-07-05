@@ -1,12 +1,12 @@
 #!/bin/sh
-# Copyright (c) 2014-2015 The Syndicate Core developers
+# Copyright (c) 2014-2015 The Syndicate Cash developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 set -e
 
 ROOTDIR=dist
-BUNDLE="${ROOTDIR}/Syndicate-Qt.app"
+BUNDLE="${ROOTDIR}/SyndicateCash-Qt.app"
 CODESIGN=codesign
 TEMPDIR=sign.temp
 TEMPLIST=${TEMPDIR}/signatures.txt

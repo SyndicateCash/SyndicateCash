@@ -1,8 +1,8 @@
 // Copyright (c) 2012 The Bitcoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
-#ifndef SYNX_VERSION_H
-#define SYNX_VERSION_H
+#ifndef XSYN_VERSION_H
+#define XSYN_VERSION_H
 
 #include "clientversion.h"
 #include <string>

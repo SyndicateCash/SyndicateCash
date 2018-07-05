@@ -66,7 +66,7 @@ bool AppInit(int argc, char* argv[])
                 strUsage += "\n" + _("Usage:") + "\n" +
                     "  syndicated [options]                     " + strprintf(_("Start %s Daemon"), _(PACKAGE_NAME)) + "\n";
 
-                strUsage += "\n" + HelpMessage(HMM_SYNXD);
+                strUsage += "\n" + HelpMessage(HMM_XSYND);
             }
 
             fprintf(stdout, "%s", strUsage.c_str());

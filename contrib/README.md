@@ -13,7 +13,7 @@ Construct a linear, no-fork, best version of the blockchain.
 
 ### [Qos](/contrib/qos) ###
 
-A Linux bash script that will set up traffic control (tc) to limit the outgoing bandwidth for connections to the Syndicate network. This means one can have an always-on syndicated instance running, and another local syndicated/syndicate-qt instance which connects to this node and receives blocks from it.
+A Linux bash script that will set up traffic control (tc) to limit the outgoing bandwidth for connections to the Syndicate Cash network. This means one can have an always-on syndicated instance running, and another local syndicated/syndicate-qt instance which connects to this node and receives blocks from it.
 
 ### [Seeds](/contrib/seeds) ###
 Utility to generate the pnSeed[] array that is compiled into the client.
@@ -26,16 +26,16 @@ Contains files used to package syndicated/syndicate-qt
 for Debian-based Linux systems. If you compile syndicated/syndicate-qt yourself, there are some useful files here.
 
 ### [Gitian-descriptors](/contrib/gitian-descriptors) ###
-Files used during the gitian build process. For more information about gitian, see the [the Syndicate Core documentation repository](https://github.com/syndicate-core/docs).
+Files used during the gitian build process. For more information about gitian, see the [the Syndicate Cash documentation repository](https://github.com/SyndicateCash/docs).
 
 ### [Gitian-keys](/contrib/gitian-keys)
-PGP keys used for signing Syndicate Core [Gitian release](/doc/release-process.md) results.
+PGP keys used for signing Syndicate Cash [Gitian release](/doc/release-process.md) results.
 
 ### [MacDeploy](/contrib/macdeploy) ###
 Scripts and notes for Mac builds. 
 
 ### [RPM](/contrib/rpm) ###
-RPM spec file for building syndicate-core on RPM based distributions.
+RPM spec file for building syndicate-cash on RPM based distributions.
 
 ### [Gitian-build](/contrib/gitian-build.sh) ###
 Script for running full Gitian builds.

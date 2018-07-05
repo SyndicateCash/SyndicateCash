@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef SYNX_SCRIPT_H
-#define SYNX_SCRIPT_H
+#ifndef XSYN_SCRIPT_H
+#define XSYN_SCRIPT_H
 
 #include "primitives/transaction.h"
 #include "script/script.h"
@@ -102,4 +102,4 @@ public:
     )
 };
 
-#endif // SYNX_SCRIPT_H
+#endif // XSYN_SCRIPT_H

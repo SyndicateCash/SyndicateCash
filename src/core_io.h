@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef SYNX_CORE_IO_H
-#define SYNX_CORE_IO_H
+#ifndef XSYN_CORE_IO_H
+#define XSYN_CORE_IO_H
 
 #include <string>
 #include <vector>
@@ -30,4 +30,4 @@ std::string EncodeHexTx(const CTransaction& tx, const int serializeFlags = 0);
 void ScriptPubKeyToUniv(const CScript& scriptPubKey, UniValue& out, bool fIncludeHex);
 void TxToUniv(const CTransaction& tx, const uint256& hashBlock, UniValue& entry);
 
-#endif // SYNX_CORE_IO_H
+#endif // XSYN_CORE_IO_H

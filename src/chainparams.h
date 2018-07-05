@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef SYNX_CHAIN_PARAMS_H
-#define SYNX_CHAIN_PARAMS_H
+#ifndef XSYN_CHAIN_PARAMS_H
+#define XSYN_CHAIN_PARAMS_H
 
 #include "uint256.h"
 #include "util.h"

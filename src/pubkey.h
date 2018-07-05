@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef SYNX_PUBKEY_H
-#define SYNX_PUBKEY_H
+#ifndef XSYN_PUBKEY_H
+#define XSYN_PUBKEY_H
 
 #include "hash.h"
 #include "serialize.h"
@@ -204,4 +204,4 @@ struct ECCryptoClosure
     ECCVerifyHandle handle;
 };
 
-#endif // SYNX_PUBKEY_H
+#endif // XSYN_PUBKEY_H

@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef SYNX_SYNC_H
-#define SYNX_SYNC_H
+#ifndef XSYN_SYNC_H
+#define XSYN_SYNC_H
 
 #include "threadsafety.h"
 

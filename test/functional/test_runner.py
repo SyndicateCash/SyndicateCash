@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (c) 2014-2017 The Syndicate Core developers
+# Copyright (c) 2014-2017 The Syndicate Cash developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """Run regression test suite.
@@ -221,8 +221,8 @@ def main():
     enable_syndicated = config["components"].getboolean("ENABLE_SYNDICATED")
 
     if config["environment"]["EXEEXT"] == ".exe" and not args.force:
-        # https://github.com/syndicate/syndicate/commit/d52802551752140cf41f0d9a225a43e84404d3e9
-        # https://github.com/syndicate/syndicate/pull/5677#issuecomment-136646964
+        # https://github.com/SyndicateCash/SyndicateCash/commit/d52802551752140cf41f0d9a225a43e84404d3e9
+        # https://github.com/SyndicateCash/SyndicateCash/pull/5677#issuecomment-136646964
         print("Tests currently disabled on Windows by default. Use --force option to enable")
         sys.exit(0)
 

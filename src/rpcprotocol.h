@@ -50,7 +50,7 @@ enum RPCErrorCode
     RPC_OUT_OF_MEMORY               = -7,  // Ran out of memory during operation
     RPC_INVALID_PARAMETER           = -8,  // Invalid, missing or duplicate parameter
     RPC_DATABASE_ERROR              = -20, // Database error
-    RPC_DESERIALIZATSYNX_ERROR       = -22, // Error parsing or validating structure in raw format
+    RPC_DESERIALIZATXSYN_ERROR       = -22, // Error parsing or validating structure in raw format
     RPC_SERVER_NOT_STARTED          = -18, // RPC server was not started (StartRPCThreads() not called)
 
     // P2P client errors
@@ -68,7 +68,7 @@ enum RPCErrorCode
     RPC_WALLET_UNLOCK_NEEDED        = -13, // Enter the wallet passphrase with walletpassphrase first
     RPC_WALLET_PASSPHRASE_INCORRECT = -14, // The wallet passphrase entered was incorrect
     RPC_WALLET_WRONG_ENC_STATE      = -15, // Command given in wrong wallet encryption state (encrypting an encrypted wallet etc.)
-    RPC_WALLET_ENCRYPTSYNX_FAILED    = -16, // Failed to encrypt the wallet
+    RPC_WALLET_ENCRYPTXSYN_FAILED    = -16, // Failed to encrypt the wallet
     RPC_WALLET_ALREADY_UNLOCKED     = -17, // Wallet is already unlocked
 };
 

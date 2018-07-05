@@ -87,7 +87,7 @@ public:
     }
 };
 
-/** Interface to Syndicate wallet from Qt view code. */
+/** Interface to Syndicate Cash wallet from Qt view code. */
 class WalletModel : public QObject
 {
     Q_OBJECT

@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef SYNX_LEVELDB_H
-#define SYNX_LEVELDB_H
+#ifndef XSYN_LEVELDB_H
+#define XSYN_LEVELDB_H
 
 #include "chain.h"
 #include "main.h"
@@ -206,4 +206,4 @@ private:
 };
 
 
-#endif // SYNX_DB_H
+#endif // XSYN_DB_H

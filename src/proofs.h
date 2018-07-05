@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef SYNX_POW_H
-#define SYNX_POW_H
+#ifndef XSYN_POW_H
+#define XSYN_POW_H
 
 #include <stdint.h>
 
@@ -29,4 +29,4 @@ int64_t GetCoinbaseValue(int nHeight, CAmount nFees);
 /** Determine Block Reward for Proof Of Stake **/
 int64_t GetCoinstakeValue(int64_t nCoinAge, CAmount nFees, int nHeight);
 
-#endif // SYNX_POW_H
+#endif // XSYN_POW_H

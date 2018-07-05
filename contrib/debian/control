@@ -26,9 +26,9 @@ Build-Depends: debhelper,
  python,
  libzmq3-dev
 Standards-Version: 3.9.2
-Homepage: https://syndicatecore.org/
-Vcs-Git: git://github.com/syndicate/syndicate.git
-Vcs-Browser: https://github.com/syndicate/syndicate
+Homepage: https://syndicatecash.io/
+Vcs-Git: git://github.com/SyndicateCash/SyndicateCash.git
+Vcs-Browser: https://github.com/SyndicateCash/SyndicateCash
 
 Package: syndicated
 Architecture: any

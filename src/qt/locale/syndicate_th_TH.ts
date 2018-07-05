@@ -97,7 +97,7 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>SyndicateGUI</name>
+    <name>SyndicateCashGUI</name>
     </context>
 <context>
     <name>ClientModel</name>

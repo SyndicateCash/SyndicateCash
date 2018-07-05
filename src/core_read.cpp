@@ -99,8 +99,8 @@ bool DecodeHexTx(CMutableTransaction& tx, const std::string& strHexTx, bool fTry
     vector<unsigned char> txData(ParseHex(strHexTx));
 
     if (fTryNoWitness) {
-// SERIALIZE_TRANSACTSYNX_NO_WITNESS is to be defined in transaction.h
-//        CDataStream ssData(txData, SER_NETWORK, PROTOCOL_VERSION | SERIALIZE_TRANSACTSYNX_NO_WITNESS);
+// SERIALIZE_TRANSACTXSYN_NO_WITNESS is to be defined in transaction.h
+//        CDataStream ssData(txData, SER_NETWORK, PROTOCOL_VERSION | SERIALIZE_TRANSACTXSYN_NO_WITNESS);
         CDataStream ssData(txData, SER_NETWORK, PROTOCOL_VERSION);
         try {
             ssData >> tx;

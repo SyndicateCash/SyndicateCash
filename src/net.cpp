@@ -1712,8 +1712,8 @@ bool BindListenPort(const CService &addrBind, string& strError)
 #endif
 #endif
 #ifdef WIN32
-        int nProtLevel = 10 /* PROTECTSYNX_LEVEL_UNRESTRICTED */;
-        int nParameterId = 23 /* IPV6_PROTECTSYNX_LEVEl */;
+        int nProtLevel = 10 /* PROTECTXSYN_LEVEL_UNRESTRICTED */;
+        int nParameterId = 23 /* IPV6_PROTECTXSYN_LEVEl */;
         // this call is allowed to fail
         setsockopt(hListenSocket, IPPROTO_IPV6, nParameterId, (const char*)&nProtLevel, sizeof(int));
 #endif

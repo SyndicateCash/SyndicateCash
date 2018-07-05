@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef SYNX_CONSENSUS_CONSENSUS_H
-#define SYNX_CONSENSUS_CONSENSUS_H
+#ifndef XSYN_CONSENSUS_CONSENSUS_H
+#define XSYN_CONSENSUS_CONSENSUS_H
 
 #include <stdint.h>
 
@@ -14,4 +14,9 @@ static const unsigned int MAX_BLOCK_SIZE = 20000000;
 static const unsigned int MAX_BLOCK_SIGOPS = MAX_BLOCK_SIZE/50;
 
 
-#endif // SYNX_CONSENSUS_CONSENSUS_H
+
+/** The time of  the fork */
+static const unsigned int FORK_TIME = 1525827600; // Human time (GMT): Wednesday, May 9, 2018 1:00:00 AM
+
+
+#endif // XSYN_CONSENSUS_CONSENSUS_H

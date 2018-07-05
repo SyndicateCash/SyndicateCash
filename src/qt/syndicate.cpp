@@ -144,7 +144,7 @@ void DebugMessageHandler(QtMsgType type, const QMessageLogContext& context, cons
 }
 #endif
 
-#ifndef SYNX_QT_TEST
+#ifndef XSYN_QT_TEST
 int main(int argc, char *argv[])
 {
 	fHaveGUI = true;
@@ -345,4 +345,4 @@ int main(int argc, char *argv[])
     }
     return 0;
 }
-#endif // SYNX_QT_TEST
+#endif // XSYN_QT_TEST

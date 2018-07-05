@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef SYNX_NETBASE_H
-#define SYNX_NETBASE_H
+#ifndef XSYN_NETBASE_H
+#define XSYN_NETBASE_H
 
 #if defined(HAVE_CONFIG_H)
 #include "config/syndicate-config.h"

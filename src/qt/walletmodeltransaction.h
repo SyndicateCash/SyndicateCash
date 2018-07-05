@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef SYNX_QT_WALLETMODELTRANSACTSYNX_H
-#define SYNX_QT_WALLETMODELTRANSACTSYNX_H
+#ifndef XSYN_QT_WALLETMODELTRANSACTXSYN_H
+#define XSYN_QT_WALLETMODELTRANSACTXSYN_H
 
 #include "walletmodel.h"
 #include "util.h"
@@ -44,4 +44,4 @@ private:
     CAmount fee;
 };
 
-#endif // SYNX_QT_WALLETMODELTRANSACTSYNX_H
+#endif // XSYN_QT_WALLETMODELTRANSACTXSYN_H

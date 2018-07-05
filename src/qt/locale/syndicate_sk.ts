@@ -1970,7 +1970,7 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
 </context>
 <context>
-    <name>syndicate-core</name>
+    <name>syndicate-cash</name>
     <message>
         <source>Syndicate version</source>
         <translation>Syndicate verzia</translation>

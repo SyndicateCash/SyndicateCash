@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 FILE=/root/mn_count
+<<<<<<< HEAD
 WALLET=https://github.com/SyndicateLtd/SyndicateQT/releases/download/v1.9.9/Syndicate-1.9.9-x86_64-linux-gnu.tar.gz
+=======
+WALLET=https://github.com/SyndicateClassic/SyndicateQT/releases/download/v1.9.9/Syndicate-1.9.9-x86_64-linux-gnu.tar.gz
+>>>>>>> v1.fp.done
 BOOTSTRAP=https://www.dropbox.com/s/xtyn9540qx1ntva/bootstrap.zip?dl=1
 vpsip=$(hostname -I | awk '{print $1}')
 mncount=$(cat $FILE)
@@ -62,7 +66,11 @@ function xthmn() {
 	rm -rf /home/mn$mncount/.Syndicate/Syndicate.conf
 	clear
 		while true; do
+<<<<<<< HEAD
 			echo -e "Key In the port your want the SYNX MN$mncount to listen on (normally 9999) and  press[ENTER]: \n"
+=======
+			echo -e "Key In the port your want the XSYN MN$mncount to listen on (normally 9999) and  press[ENTER]: \n"
+>>>>>>> v1.fp.done
 			while true; do
 				read synxprtmnx
 					if [[ $synxprtmnx = $synxprtmn1 ]]; then
@@ -195,7 +203,11 @@ else
 			echo -e "Key In a MN PASSWORD (same as in your wallet) can be found in same file as before: \n"
 			echo -e "Please key in rpcpassword here and press [ENTER]:\n"
 			read usrpasmn1
+<<<<<<< HEAD
 			echo -e "Key In the port your want the SYNX MN to listen on (normally 9999) and  press[ENTER]: \n"
+=======
+			echo -e "Key In the port your want the XSYN MN to listen on (normally 9999) and  press[ENTER]: \n"
+>>>>>>> v1.fp.done
 			read synxprtmn1
 			echo -e "Key In the Masternode privatekey and press[ENTER]: \n"
 			echo -e "This is the output from masternode genkey command: \n"

@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef SYNX_QT_BANTABLEMODEL_H
-#define SYNX_QT_BANTABLEMODEL_H
+#ifndef XSYN_QT_BANTABLEMODEL_H
+#define XSYN_QT_BANTABLEMODEL_H
 
 #include "net.h"
 
@@ -69,4 +69,4 @@ private:
     BanTablePriv *priv;
 };
 
-#endif // SYNX_QT_BANTABLEMODEL_H
+#endif // XSYN_QT_BANTABLEMODEL_H

@@ -127,7 +127,7 @@ void EditAddressDialog::accept()
                 tr("Could not unlock wallet."),
                 QMessageBox::Ok, QMessageBox::Ok);
             break;
-        case AddressTableModel::KEY_GENERATSYNX_FAILURE:
+        case AddressTableModel::KEY_GENERATXSYN_FAILURE:
             QMessageBox::critical(this, windowTitle(),
                 tr("New key generation failed."),
                 QMessageBox::Ok, QMessageBox::Ok);

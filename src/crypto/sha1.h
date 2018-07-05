@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef SYNX_CRYPTO_SHA1_H
-#define SYNX_CRYPTO_SHA1_H
+#ifndef XSYN_CRYPTO_SHA1_H
+#define XSYN_CRYPTO_SHA1_H
 
 #include <stdint.h>
 #include <stdlib.h>
@@ -25,4 +25,4 @@ public:
     CSHA1& Reset();
 };
 
-#endif // SYNX_CRYPTO_SHA1_H
+#endif // XSYN_CRYPTO_SHA1_H

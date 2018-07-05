@@ -5,8 +5,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef SYNX_UINT256_H
-#define SYNX_UINT256_H
+#ifndef XSYN_UINT256_H
+#define XSYN_UINT256_H
 
 #include <assert.h>
 #include <cstring>
@@ -399,4 +399,4 @@ public:
     }
 };
 
-#endif // SYNX_UINT256_H
+#endif // XSYN_UINT256_H

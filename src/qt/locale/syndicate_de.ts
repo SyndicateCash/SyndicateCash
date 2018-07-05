@@ -1714,7 +1714,7 @@ Adresse: %4</translation>
     </message>
 </context>
 <context>
-    <name>syndicate-core</name>
+    <name>syndicate-cash</name>
     <message>
         <source>Usage:</source>
         <translation>Benutzung:</translation>

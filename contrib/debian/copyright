@@ -2,12 +2,12 @@ Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: Syndicate
 Upstream-Contact: Satoshi Nakamoto <satoshin@gmx.com>
  irc://#syndicate@freenode.net
-Source: https://github.com/syndicate/syndicate
+Source: https://github.com/SyndicateCash/SyndicateCash
 
 Files: *
-Copyright: 2009-2018, Syndicate Core Developers
+Copyright: 2009-2018, Syndicate Cash Developers
 License: Expat
-Comment: The Syndicate Core Developers encompasses the current developers listed on syndicate.org,
+Comment: The Syndicate Cash Developers encompasses the current developers listed on syndicate.org,
          as well as the numerous contributors to the project.
 
 Files: debian/*

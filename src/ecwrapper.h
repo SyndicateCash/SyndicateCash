@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef SYNX_EC_WRAPPER_H
-#define SYNX_EC_WRAPPER_H
+#ifndef XSYN_EC_WRAPPER_H
+#define XSYN_EC_WRAPPER_H
 
 #include <cstddef>
 #include <vector>

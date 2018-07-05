@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef SYNX_REVERSELOCK_H
-#define SYNX_REVERSELOCK_H
+#ifndef XSYN_REVERSELOCK_H
+#define XSYN_REVERSELOCK_H
 
 /**
  * An RAII-style reverse lock. Unlocks on construction and locks on destruction.
@@ -31,4 +31,4 @@ private:
     Lock templock;
 };
 
-#endif // SYNX_REVERSELOCK_H
+#endif // XSYN_REVERSELOCK_H

@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef SYNX_QT_MACDOCKICONHANDLER_H
-#define SYNX_QT_MACDOCKICONHANDLER_H
+#ifndef XSYN_QT_MACDOCKICONHANDLER_H
+#define XSYN_QT_MACDOCKICONHANDLER_H
 
 #include <QMainWindow>
 #include <QObject>
@@ -42,4 +42,4 @@ private:
     QMainWindow *mainWindow;
 };
 
-#endif // SYNX_QT_MACDOCKICONHANDLER_H
+#endif // XSYN_QT_MACDOCKICONHANDLER_H

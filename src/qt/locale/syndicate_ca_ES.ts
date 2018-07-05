@@ -2,12 +2,12 @@
 <context>
     <name>AboutDialog</name>
     <message>
-        <source>About Syndicate</source>
-        <translation>Sobre Syndicate</translation>
+        <source>About Syndicate Cash</source>
+        <translation>Sobre Syndicate Cash</translation>
     </message>
     <message>
-        <source>&lt;b&gt;Syndicate&lt;/b&gt; version</source>
-        <translation>versió &lt;b&gt;Syndicate&lt;/b&gt;</translation>
+        <source>&lt;b&gt;Syndicate Cash&lt;/b&gt; version</source>
+        <translation>versió &lt;b&gt;Syndicate Cash&lt;/b&gt;</translation>
     </message>
     </context>
 <context>
@@ -36,8 +36,8 @@
         <translation>&amp;Nova adreça</translation>
     </message>
     <message>
-        <source>These are your Syndicate addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Aquestes són les teves adreces de Syndicate per rebre els pagaments. És possible que vulgueu donar una diferent a cada remitent per a poder realitzar un seguiment de qui li está pagant.</translation>
+        <source>These are your Syndicate Cash addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Aquestes són les teves adreces de Syndicate Cash per rebre els pagaments. És possible que vulgueu donar una diferent a cada remitent per a poder realitzar un seguiment de qui li está pagant.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -48,8 +48,8 @@
         <translation>Mostra el códi &amp;QR</translation>
     </message>
     <message>
-        <source>Sign a message to prove you own a Syndicate address</source>
-        <translation>Signar un missatge per demostrar que és propietari d'una adreça Syndicate</translation>
+        <source>Sign a message to prove you own a Syndicate Cash address</source>
+        <translation>Signar un missatge per demostrar que és propietari d'una adreça Syndicate Cash</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -60,8 +60,8 @@
         <translation>Esborrar l'adreça sel·leccionada</translation>
     </message>
     <message>
-        <source>Verify a message to ensure it was signed with a specified Syndicate address</source>
-        <translation>Comproveu el missatge per assegurar-se que es va signar amb una adreça Syndicate especificada.</translation>
+        <source>Verify a message to ensure it was signed with a specified Syndicate Cash address</source>
+        <translation>Comproveu el missatge per assegurar-se que es va signar amb una adreça Syndicate Cash especificada.</translation>
     </message>
     <message>
         <source>&amp;Verify Message</source>
@@ -190,8 +190,8 @@
         <translation>Moneder encriptat</translation>
     </message>
     <message>
-        <source>Syndicate will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>Syndicate tancarà ara per acabar el procés de xifrat. Recordeu que l'encriptació del seu moneder no pot protegir completament les seves monedes de ser robades pel malware que pugui infectar al seu equip.</translation>
+        <source>Syndicate Cash will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>Syndicate Cash tancarà ara per acabar el procés de xifrat. Recordeu que l'encriptació del seu moneder no pot protegir completament les seves monedes de ser robades pel malware que pugui infectar al seu equip.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -229,7 +229,7 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>SyndicateGUI</name>
+    <name>SyndicateCashGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Signar &amp;missatge...</translation>
@@ -263,8 +263,8 @@
         <translation>Sortir de l'aplicació</translation>
     </message>
     <message>
-        <source>Show information about Syndicate</source>
-        <translation>Mostra informació sobre Syndicate</translation>
+        <source>Show information about Syndicate Cash</source>
+        <translation>Mostra informació sobre Syndicate Cash</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -295,12 +295,12 @@
         <translation>&amp;Exportar...</translation>
     </message>
     <message>
-        <source>Send coins to a Syndicate address</source>
-        <translation>Enviar monedes a una adreça Syndicate</translation>
+        <source>Send coins to a Syndicate Cash address</source>
+        <translation>Enviar monedes a una adreça Syndicate Cash</translation>
     </message>
     <message>
-        <source>Modify configuration options for Syndicate</source>
-        <translation>Modificar les opcions de configuració per a Syndicate</translation>
+        <source>Modify configuration options for Syndicate Cash</source>
+        <translation>Modificar les opcions de configuració per a Syndicate Cash</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
@@ -331,16 +331,16 @@
         <translation>&amp;Verifica el missatge..</translation>
     </message>
     <message>
-        <source>Syndicate</source>
-        <translation>Syndicate</translation>
+        <source>Syndicate Cash</source>
+        <translation>Syndicate Cash</translation>
     </message>
     <message>
         <source>Wallet</source>
         <translation>Moneder</translation>
     </message>
     <message>
-        <source>&amp;About Syndicate</source>
-        <translation>&amp;Sobre Syndicate</translation>
+        <source>&amp;About Syndicate Cash</source>
+        <translation>&amp;Sobre Syndicate Cash</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -379,12 +379,12 @@
         <translation>[testnet]</translation>
     </message>
     <message>
-        <source>Syndicate client</source>
-        <translation>Client Syndicate</translation>
+        <source>Syndicate Cash client</source>
+        <translation>Client Syndicate Cash</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Syndicate network</source>
-        <translation><numerusform>%n conexió activa a la xarxa Syndicate</numerusform><numerusform>%n conexions actives a la xarxa Syndicate</numerusform></translation>
+        <source>%n active connection(s) to Syndicate Cash network</source>
+        <translation><numerusform>%n conexió activa a la xarxa Syndicate Cash</numerusform><numerusform>%n conexions actives a la xarxa Syndicate Cash</numerusform></translation>
     </message>
     <message>
         <source>Not staking because wallet is locked</source>
@@ -439,8 +439,8 @@ Address: %4
         <translation>Manejant URI</translation>
     </message>
     <message>
-        <source>URI can not be parsed! This can be caused by an invalid Syndicate address or malformed URI parameters.</source>
-        <translation>l'URI no es pot analitzar! Això pot ser causat per una adreça Syndicate no vàlida o paràmetres URI malformats.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid Syndicate Cash address or malformed URI parameters.</source>
+        <translation>l'URI no es pot analitzar! Això pot ser causat per una adreça Syndicate Cash no vàlida o paràmetres URI malformats.</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
@@ -487,8 +487,8 @@ Address: %4
         <translation>No s'està fent "stake" </translation>
     </message>
     <message>
-        <source>A fatal error occurred. Syndicate can no longer continue safely and will quit.</source>
-        <translation>S'ha produït un error fatal. Syndicate ja no pot continuar de forma segura i es tancarà.</translation>
+        <source>A fatal error occurred. Syndicate Cash can no longer continue safely and will quit.</source>
+        <translation>S'ha produït un error fatal. Syndicate Cash ja no pot continuar de forma segura i es tancarà.</translation>
     </message>
 </context>
 <context>
@@ -719,8 +719,8 @@ Address: %4
         <translation>L'adreça introduïda "%1" ja és present a la llibreta d'adreces.</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Syndicate address.</source>
-        <translation>La direcció introduïda "%1" no és una adreça Syndicate vàlida.</translation>
+        <source>The entered address "%1" is not a valid Syndicate Cash address.</source>
+        <translation>La direcció introduïda "%1" no és una adreça Syndicate Cash vàlida.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -805,20 +805,20 @@ Address: %4
         <translation>Reserva</translation>
     </message>
     <message>
-        <source>Automatically start Syndicate after logging in to the system.</source>
-        <translation>Inicia automàticament Syndicate després d'entrar en el sistema.</translation>
+        <source>Automatically start Syndicate Cash after logging in to the system.</source>
+        <translation>Inicia automàticament Syndicate Cash després d'entrar en el sistema.</translation>
     </message>
     <message>
-        <source>&amp;Start Syndicate on system login</source>
-        <translation>&amp;Iniciar Syndicate amb l'inici de sessió</translation>
+        <source>&amp;Start Syndicate Cash on system login</source>
+        <translation>&amp;Iniciar Syndicate Cash amb l'inici de sessió</translation>
     </message>
     <message>
         <source>&amp;Network</source>
         <translation>&amp;Xarxa</translation>
     </message>
     <message>
-        <source>Automatically open the Syndicate client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Obrir automàticament el port de client Syndicate en el router. Això només funciona quan el router és compatible amb UPnP i està habilitat.</translation>
+        <source>Automatically open the Syndicate Cash client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Obrir automàticament el port de client Syndicate Cash en el router. Això només funciona quan el router és compatible amb UPnP i està habilitat.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -869,8 +869,8 @@ Address: %4
         <translation>Llenguatge de la Interfície d'Usuari:</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Syndicate.</source>
-        <translation>L'idioma de la interfície d'usuari es pot configurar aquí. Aquesta configuració s'aplicarà després de reiniciar Syndicate.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Syndicate Cash.</source>
+        <translation>L'idioma de la interfície d'usuari es pot configurar aquí. Aquesta configuració s'aplicarà després de reiniciar Syndicate Cash.</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -909,8 +909,8 @@ Address: %4
         <translation>Avís</translation>
     </message>
     <message>
-        <source>This setting will take effect after restarting Syndicate.</source>
-        <translation>Aquesta configuració s'aplicarà després de reiniciar Syndicate.</translation>
+        <source>This setting will take effect after restarting Syndicate Cash.</source>
+        <translation>Aquesta configuració s'aplicarà després de reiniciar Syndicate Cash.</translation>
     </message>
     <message>
         <source>The supplied proxy address is invalid.</source>
@@ -924,8 +924,8 @@ Address: %4
         <translation>Formulari</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Syndicate network after a connection is established, but this process has not completed yet.</source>
-        <translation>La informació mostrada pot estar fora de data. El seu moneder es sincronitza automàticament amb la xarxa Syndicate després d'establir una connexió, però aquest procés no s'ha completat encara.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Syndicate Cash network after a connection is established, but this process has not completed yet.</source>
+        <translation>La informació mostrada pot estar fora de data. El seu moneder es sincronitza automàticament amb la xarxa Syndicate Cash després d'establir una connexió, però aquest procés no s'ha completat encara.</translation>
     </message>
     <message>
         <source>Stake:</source>
@@ -1083,16 +1083,16 @@ Address: %4
         <translation>Dietàri de depuració</translation>
     </message>
     <message>
-        <source>Open the Syndicate debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Obriu el fitxer de registre de depuració Syndicate des del directori de dades actual. Això pot trigar uns segons en els arxius de registre de grans dimensions.</translation>
+        <source>Open the Syndicate Cash debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Obriu el fitxer de registre de depuració Syndicate Cash des del directori de dades actual. Això pot trigar uns segons en els arxius de registre de grans dimensions.</translation>
     </message>
     <message>
         <source>Clear console</source>
         <translation>Netejar consola</translation>
     </message>
     <message>
-        <source>Welcome to the Syndicate RPC console.</source>
-        <translation>Benvingut a la consola RPC de Syndicate.</translation>
+        <source>Welcome to the Syndicate Cash RPC console.</source>
+        <translation>Benvingut a la consola RPC de Syndicate Cash.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -1352,8 +1352,8 @@ Address: %4
         <translation>Copiar la signatura actual al porta-retalls del sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Syndicate address</source>
-        <translation>Signar un missatge per demostrar que és propietari d'aquesta adreça Syndicate</translation>
+        <source>Sign the message to prove you own this Syndicate Cash address</source>
+        <translation>Signar un missatge per demostrar que és propietari d'aquesta adreça Syndicate Cash</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1376,24 +1376,24 @@ Address: %4
         <translation>La direcció que va ser signada amb un missatge (per exemple B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Syndicate address</source>
-        <translation>Comproveu el missatge per assegurar-se que es va signar amb l'adreça Syndicate especificada.</translation>
+        <source>Verify the message to ensure it was signed with the specified Syndicate Cash address</source>
+        <translation>Comproveu el missatge per assegurar-se que es va signar amb l'adreça Syndicate Cash especificada.</translation>
     </message>
     <message>
         <source>Reset all verify message fields</source>
         <translation>Neteja tots els camps de verificació de missatge</translation>
     </message>
     <message>
-        <source>Enter a Syndicate address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Introdueix una adreça Syndicate (p.ex. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a Syndicate Cash address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Introdueix una adreça Syndicate Cash (p.ex. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <source>Click "Sign Message" to generate signature</source>
         <translation>Clica "Signar Missatge" per a generar una signatura</translation>
     </message>
     <message>
-        <source>Enter Syndicate signature</source>
-        <translation>Introduïu la signatura Syndicate</translation>
+        <source>Enter Syndicate Cash signature</source>
+        <translation>Introduïu la signatura Syndicate Cash</translation>
     </message>
     <message>
         <source>The entered address is invalid.</source>
@@ -1817,8 +1817,8 @@ Address: %4
 <context>
     <name>syndicate-core</name>
     <message>
-        <source>Syndicate version</source>
-        <translation>versió Syndicate</translation>
+        <source>Syndicate Cash version</source>
+        <translation>versió Syndicate Cash</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -1969,8 +1969,8 @@ Address: %4
         <translation>Anteposar marca de temps a la sortida de depuració</translation>
     </message>
     <message>
-        <source>SSL options: (see the Syndicate Wiki for SSL setup instructions)</source>
-        <translation>Opcions SSL: (veure la Wiki de Syndicate per a instruccions de configuració SSL)</translation>
+        <source>SSL options: (see the Syndicate Cash Wiki for SSL setup instructions)</source>
+        <translation>Opcions SSL: (veure la Wiki de Syndicate Cash per a instruccions de configuració SSL)</translation>
     </message>
     <message>
         <source>Send trace/debug info to console instead of debug.log file</source>
@@ -2114,12 +2114,12 @@ Executar una ordre quan es rep un avís rellevant (%s en cmd es substitueix per 
         <translation>Error carregant wallet.dat: Moneder corrupte</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Syndicate</source>
-        <translation>Error en carregar wallet.dat: El moneder requereix la versió més recent de Syndicate</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Syndicate Cash</source>
+        <translation>Error en carregar wallet.dat: El moneder requereix la versió més recent de Syndicate Cash</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Syndicate to complete</source>
-        <translation>El moneder necessita ser reescrita: reiniciar Syndicate per completar</translation>
+        <source>Wallet needed to be rewritten: restart Syndicate Cash to complete</source>
+        <translation>El moneder necessita ser reescrita: reiniciar Syndicate Cash per completar</translation>
     </message>
     <message>
         <source>Error loading wallet.dat</source>
@@ -2166,8 +2166,8 @@ Executar una ordre quan es rep un avís rellevant (%s en cmd es substitueix per 
         <translation>Afegir un node per a connectar's-hi i intentar mantenir la connexió oberta</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Syndicate is probably already running.</source>
-        <translation>No es pot enllaçar a %s en aquest equip. Syndicate probablement ja estigui en funcionament.</translation>
+        <source>Unable to bind to %s on this computer. Syndicate Cash is probably already running.</source>
+        <translation>No es pot enllaçar a %s en aquest equip. Syndicate Cash probablement ja estigui en funcionament.</translation>
     </message>
     <message>
         <source>Fee per KB to add to transactions you send</source>

@@ -1,7 +1,7 @@
 RPM Spec File Notes
 -------------------
 
-The RPM spec file provided here is for Syndicate-Core 0.12.0 and builds on CentOS
+The RPM spec file provided here is for Syndicate-Cash 0.12.0 and builds on CentOS
 7 with either the CentOS provided OpenSSL library or with LibreSSL as packaged
 at [LibreLAMP.com](https://librelamp.com/). It should hopefully not be too
 difficult to port the RPM spec file to most RPM based Linux distributions.
@@ -15,11 +15,11 @@ It is considered good form for all sources to reference a URL where the source
 can be downloaded.
 
 Sources 0-9 should be reserved for source code tarballs. `Source0` should
-reference the release tarball available from https://syndicate.org/bin/ and
+reference the release tarball available from https://syndicatecash.io/bin/ and
 `Source1` should reference the BerkeleyDB source.
 
 Sources 10-99 are for source files that are maintained in the
-[Syndicate git repository](https://github.com/syndicate/syndicate) but are not part of
+[Syndicate Cash git repository](https://github.com/SyndicateCash/SyndicateCash) but are not part of
 the release tarball. Most of these will reside in the `contrib` sub-directory.
 
 Sources 10-19 should be reserved for miscellaneous configuration files.
@@ -34,7 +34,7 @@ release, the full URL specified in the RPM spec file will not work. You can get
 them from the git repository where you retrieved this file.
 
 Sources 100+ are for files that are not source tarballs and are not maintained
-in the syndicate git repository. At present only an SVG version of the Syndicate
+in the syndicate git repository. At present only an SVG version of the Syndicate Cash
 icon is used.
 
 ## Patches
@@ -48,7 +48,7 @@ release.
 
 This patch is only needed if building against LibreSSL. LibreSSL is not the
 standard TLS library on most Linux distributions. The patch will likely not be
-needed when 0.12.1 is released, a proper fix is already in the Syndicate git
+needed when 0.12.1 is released, a proper fix is already in the Syndicate Cash git
 master branch.
 
 ## BuildRequires
@@ -62,7 +62,7 @@ most likely to be the case with the Qt packages.
 
 The `build-unix.md` file recommends building against BerkeleyDB 4.8.30. Even if
 that is the version your Linux distribution ships with, it probably is a good
-idea to build Syndicate Core against a static version of that library compiled
+idea to build Syndicate Cash against a static version of that library compiled
 according to the instructions in the `build-unix.md` file so that any changes
 the distribution may make in the future will not result in a problem for users.
 
@@ -137,7 +137,7 @@ want the OpenSSL development files.
 LibreSSL (and some newer builds of OpenSSL) do not have support for SSLv3. This
 can cause issues with the Boost package if the Boost package has not been
 patched accordingly. On those distributions, you will either need to build
-Syndicate-Core against OpenSSL or use a patched version of Boost in the build
+Syndicate-Cash against OpenSSL or use a patched version of Boost in the build
 system.
 
 As SSLv3 is no longer safe, distributions that have not patched Boost to work
@@ -157,7 +157,7 @@ developed on (CentOS 7).
 
 This RPM spec file is largely based upon the work of Michael Hampton at
 [Ringing Liberty](https://www.ringingliberty.com/syndicate/). He has been
-packaging Syndicate for Fedora at least since 2012.
+packaging Syndicate Cash for Fedora at least since 2012.
 
 Most of the differences between his packaging and this package are stylistic in
 nature. The major differences:
@@ -174,7 +174,7 @@ academic.
 specifying a build without the Qt GUI, or specifying which version of the Qt
 libraries to use.
 
-4. I renamed the `syndicate` package that contains the Qt GUI to `syndicate-core` as
+4. I renamed the `syndicate` package that contains the Qt GUI to `syndicate-cash` as
 that appears to be how the general population refers to it, in contrast to
 `syndicate-xt` or `syndicate-classic`. I wanted to make sure the general population
 knows what they are getting when installing the GUI package.

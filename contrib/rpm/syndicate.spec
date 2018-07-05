@@ -20,22 +20,22 @@ Summary:	Peer to Peer Cryptographic Currency
 
 Group:		Applications/System
 License:	MIT
-URL:		https://syndicate.org/
-Source0:	https://syndicate.org/bin/syndicate-core-%{version}/syndicate-%{version}.tar.gz
+URL:		https://syndicatecash.io/
+Source0:	https://syndicatecash.io/bin/syndicate-cash-%{version}/syndicate-%{version}.tar.gz
 Source1:	http://download.oracle.com/berkeley-db/db-%{bdbv}.NC.tar.gz
 
-Source10:	https://raw.githubusercontent.com/syndicate/syndicate/v%{version}/contrib/debian/examples/syndicate.conf
+Source10:	https://raw.githubusercontent.com/SyndicateCash/SyndicateCash/v%{version}/contrib/debian/examples/syndicate.conf
 
 #man pages
-Source20:	https://raw.githubusercontent.com/syndicate/syndicate/v%{version}/doc/man/syndicated.1
-Source21:	https://raw.githubusercontent.com/syndicate/syndicate/v%{version}/doc/man/syndicate-cli.1
-Source22:	https://raw.githubusercontent.com/syndicate/syndicate/v%{version}/doc/man/syndicate-qt.1
+Source20:	https://raw.githubusercontent.com/SyndicateCash/SyndicateCash/v%{version}/doc/man/syndicated.1
+Source21:	https://raw.githubusercontent.com/SyndicateCash/SyndicateCash/v%{version}/doc/man/syndicate-cli.1
+Source22:	https://raw.githubusercontent.com/SyndicateCash/SyndicateCash/v%{version}/doc/man/syndicate-qt.1
 
 #selinux
-Source30:	https://raw.githubusercontent.com/syndicate/syndicate/v%{version}/contrib/rpm/syndicate.te
+Source30:	https://raw.githubusercontent.com/SyndicateCash/SyndicateCash/v%{version}/contrib/rpm/syndicate.te
 # Source31 - what about syndicate-tx and bench_syndicate ???
-Source31:	https://raw.githubusercontent.com/syndicate/syndicate/v%{version}/contrib/rpm/syndicate.fc
-Source32:	https://raw.githubusercontent.com/syndicate/syndicate/v%{version}/contrib/rpm/syndicate.if
+Source31:	https://raw.githubusercontent.com/SyndicateCash/SyndicateCash/v%{version}/contrib/rpm/syndicate.fc
+Source32:	https://raw.githubusercontent.com/SyndicateCash/SyndicateCash/v%{version}/contrib/rpm/syndicate.if
 
 Source100:	https://upload.wikimedia.org/wikipedia/commons/4/46/Syndicate.svg
 
@@ -124,13 +124,13 @@ BuildRequires:	checkpolicy
 BuildRequires:	%{_datadir}/selinux/devel/Makefile
 
 %description server
-This package provides a stand-alone syndicate-core daemon. For most users, this
+This package provides a stand-alone syndicate-cash daemon. For most users, this
 package is only needed if they need a full-node without the graphical client.
 
 Some third party wallet software will want this package to provide the actual
-syndicate-core node they use to connect to the network.
+syndicate-cash node they use to connect to the network.
 
-If you use the graphical syndicate-core client then you almost certainly do not
+If you use the graphical syndicate-cash client then you almost certainly do not
 need this package.
 
 %package utils
@@ -139,7 +139,7 @@ Group:		Applications/System
 
 %description utils
 This package provides several command line utilities for interacting with a
-syndicate-core daemon.
+syndicate-cash daemon.
 
 The syndicate-cli utility allows you to communicate and control a syndicate daemon
 over RPC, the syndicate-tx utility allows you to create a custom transaction, and
@@ -262,7 +262,7 @@ touch %{buildroot}%{_datadir}/pixmaps/*.xpm -r %{SOURCE100}
 
 # Desktop File - change the touch timestamp if modifying
 mkdir -p %{buildroot}%{_datadir}/applications
-cat <<EOF > %{buildroot}%{_datadir}/applications/syndicate-core.desktop
+cat <<EOF > %{buildroot}%{_datadir}/applications/syndicate-cash.desktop
 [Desktop Entry]
 Encoding=UTF-8
 Name=Syndicate
@@ -277,12 +277,12 @@ MimeType=x-scheme-handler/syndicate;
 Categories=Office;Finance;
 EOF
 # change touch date when modifying desktop
-touch -a -m -t 201511100546 %{buildroot}%{_datadir}/applications/syndicate-core.desktop
-%{_bindir}/desktop-file-validate %{buildroot}%{_datadir}/applications/syndicate-core.desktop
+touch -a -m -t 201511100546 %{buildroot}%{_datadir}/applications/syndicate-cash.desktop
+%{_bindir}/desktop-file-validate %{buildroot}%{_datadir}/applications/syndicate-cash.desktop
 
 # KDE protocol - change the touch timestamp if modifying
 mkdir -p %{buildroot}%{_datadir}/kde4/services
-cat <<EOF > %{buildroot}%{_datadir}/kde4/services/syndicate-core.protocol
+cat <<EOF > %{buildroot}%{_datadir}/kde4/services/syndicate-cash.protocol
 [Protocol]
 exec=syndicate-qt '%u'
 protocol=syndicate
@@ -296,7 +296,7 @@ makedir=false
 deleting=false
 EOF
 # change touch date when modifying protocol
-touch -a -m -t 201511100546 %{buildroot}%{_datadir}/kde4/services/syndicate-core.protocol
+touch -a -m -t 201511100546 %{buildroot}%{_datadir}/kde4/services/syndicate-cash.protocol
 %endif
 
 # man pages
@@ -377,8 +377,8 @@ rm -rf %{buildroot}
 %license COPYING db-%{bdbv}.NC-LICENSE
 %doc COPYING syndicate.conf.example doc/README.md doc/bips.md doc/files.md doc/multiwallet-qt.md doc/reduce-traffic.md doc/release-notes.md doc/tor.md
 %attr(0755,root,root) %{_bindir}/syndicate-qt
-%attr(0644,root,root) %{_datadir}/applications/syndicate-core.desktop
-%attr(0644,root,root) %{_datadir}/kde4/services/syndicate-core.protocol
+%attr(0644,root,root) %{_datadir}/applications/syndicate-cash.desktop
+%attr(0644,root,root) %{_datadir}/kde4/services/syndicate-cash.protocol
 %attr(0644,root,root) %{_datadir}/pixmaps/*.ico
 %attr(0644,root,root) %{_datadir}/pixmaps/*.bmp
 %attr(0644,root,root) %{_datadir}/pixmaps/*.svg
@@ -429,7 +429,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Fri Feb 26 2016 Alice Wonder <buildmaster@librelamp.com> - 0.12.0-2
-- Rename Qt package from syndicate to syndicate-core
+- Rename Qt package from syndicate to syndicate-cash
 - Make building of the Qt package optional
 - When building the Qt package, default to Qt5 but allow building
 -  against Qt4

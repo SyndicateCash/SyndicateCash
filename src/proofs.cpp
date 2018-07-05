@@ -76,7 +76,7 @@ int64_t GetCoinbaseValue(int nHeight, CAmount nFees)
 // miner's coin stake reward based on coin age spent (coin-days)
 int64_t GetCoinstakeValue(int64_t nCoinAge, CAmount nFees, int nHeight)
 {
-	CAmount nSubsidy = 10 * COIN; // Constant reward of 10 SYNX
+	CAmount nSubsidy = 10 * COIN; // Constant reward of 10 XSYN
     return nSubsidy + nFees;
 }
 

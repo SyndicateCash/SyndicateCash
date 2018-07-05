@@ -1,8 +1,8 @@
 // Copyright (c) 2009-2017 The Bitcoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
-#ifndef SYNX_CHECKPOINT_H
-#define  SYNX_CHECKPOINT_H
+#ifndef XSYN_CHECKPOINT_H
+#define  XSYN_CHECKPOINT_H
 
 #include <map>
 #include "net.h"

@@ -25,12 +25,12 @@ python27
 
 Download the source code:
 ```
-git clone https://github.com/syndicate/syndicate
+git clone https://github.com/SyndicateCash/SyndicateCash
 ```
 
 See [dependencies.md](dependencies.md) for a complete overview.
 
-### Building Syndicate Core
+### Building Syndicate Cash
 
 **Important**: Use `gmake` (the non-GNU `make` will exit with an error).
 

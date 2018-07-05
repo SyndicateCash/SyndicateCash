@@ -68,7 +68,7 @@ Value getstakesubsidy(const Array& params, bool fHelp)
         ssData >> tx;
     }
     catch (std::exception &e) {
-        throw JSONRPCError(RPC_DESERIALIZATSYNX_ERROR, "TX decode failed");
+        throw JSONRPCError(RPC_DESERIALIZATXSYN_ERROR, "TX decode failed");
     }
 
     uint64_t nCoinAge;
@@ -655,7 +655,7 @@ Value submitblock(const Array& params, bool fHelp)
         ssBlock >> block;
     }
     catch (std::exception &e) {
-        throw JSONRPCError(RPC_DESERIALIZATSYNX_ERROR, "Block decode failed");
+        throw JSONRPCError(RPC_DESERIALIZATXSYN_ERROR, "Block decode failed");
     }
 
     bool fAccepted = ProcessBlock(NULL, &block);

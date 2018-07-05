@@ -19,7 +19,7 @@
 Copyright (c) 2011-2012 Peercoin (PPCoin) Developers
 Copyright (c) 2013-2014 The NovaCoin developers
 Copyright (c) 2014-2015 Transfer Developers
-Copyright (c) 2016-2017 The syndicate Core developers</source>
+Copyright (c) 2016-2017 The Syndicate Cash developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -42,7 +42,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+15"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Enter an Alias (friendly name) for your Master Node and its address (either clearnet IP and port or Tor onion address and port). The address should be in the format 123.456.789.123:9999 or akjdsafxjkhasdf.onion:9999. You must send exactly 5000 SYNX to the collateral address.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Enter an Alias (friendly name) for your Master Node and its address (either clearnet IP and port or Tor onion address and port). The address should be in the format 123.456.789.123:9999 or akjdsafxjkhasdf.onion:9999. You must send exactly 5000 XSYN to the collateral address.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1174,12 +1174,12 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+13"/>
-        <source>Use 2 separate masternodes to mix funds up to 1000 SYNX</source>
+        <source>Use 2 separate masternodes to mix funds up to 1000 XSYN</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>Use 8 separate masternodes to mix funds up to 1000 SYNX</source>
+        <source>Use 8 separate masternodes to mix funds up to 1000 XSYN</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1189,12 +1189,12 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+13"/>
-        <source>This option is the quickest and will cost about ~0.025 SYNX to anonymize 1000 SYNX</source>
+        <source>This option is the quickest and will cost about ~0.025 XSYN to anonymize 1000 XSYN</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>This option is moderately fast and will cost about 0.05 SYNX to anonymize 1000 SYNX</source>
+        <source>This option is moderately fast and will cost about 0.05 XSYN to anonymize 1000 XSYN</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1204,7 +1204,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+13"/>
-        <source>0.1 SYNX per 1000 SYNX you anonymize.</source>
+        <source>0.1 XSYN per 1000 XSYN you anonymize.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2088,7 +2088,7 @@ Please unlock your wallet before continuing</source>
     </message>
     <message>
         <location line="+7"/>
-        <source>0 SYNX / 0 Rounds</source>
+        <source>0 XSYN / 0 Rounds</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2862,7 +2862,7 @@ Please unlock your wallet before continuing</source>
         <location line="+86"/>
         <location line="+86"/>
         <location line="+32"/>
-        <source>0.00 SYNX</source>
+        <source>0.00 XSYN</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3126,7 +3126,7 @@ Please unlock your wallet manually or wait for StashedSend mixing to complete be
     </message>
     <message>
         <location line="+4"/>
-        <source>InstantX doesn&apos;t support sending values that high yet. Transactions are currently limited to 1000 SYNX.</source>
+        <source>InstantX doesn&apos;t support sending values that high yet. Transactions are currently limited to 1000 XSYN.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4101,7 +4101,7 @@ Please unlock your wallet manually or wait for StashedSend mixing to complete be
     </message>
     <message>
         <location line="+2"/>
-        <source> Unable to locate enough Darksend non-denominated funds for this transaction that are not equal 1000 SYNX.</source>
+        <source> Unable to locate enough Darksend non-denominated funds for this transaction that are not equal 1000 XSYN.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

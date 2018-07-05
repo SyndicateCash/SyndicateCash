@@ -231,7 +231,7 @@ std::string HelpMessage(HelpMessageMode mode)
     strUsage += "  -mininput=<amt>        " + _("When creating transactions, ignore inputs with value less than this (default: 0.01)") + "\n";
     if (fHaveGUI)
         strUsage += "  -server                " + _("Accept command line and JSON-RPC commands") + "\n";
-    if (mode == HMM_SYNXD)
+    if (mode == HMM_XSYND)
     {
 #if HAVE_DECL_DAEMON
         strUsage += "  -daemon                " + _("Run in the background as a daemon and accept commands") + "\n";
@@ -312,8 +312,8 @@ strUsage += "\n" + _("Masternode options:") + "\n";
 
 std::string LicenseInfo()
 {
-    const std::string URL_SOURCE_CODE = "<https://github.com/SyndicateLtd/SyndicateQT>";
-    const std::string URL_WEBSITE = "<https://www.syndicate.org>";
+    const std::string URL_SOURCE_CODE = "<https://github.com/SyndicateClassic/SyndicateQT>";
+    const std::string URL_WEBSITE = "<https://www.syndicatecash.io>";
 
     return CopyrightHolders(strprintf(_("Copyright (C) %i-%i"), 2009, COPYRIGHT_YEAR) + " ") + "\n" +
            "\n" +
@@ -401,7 +401,7 @@ bool AppInit2(boost::thread_group& threadGroup)
     nNodeLifespan = GetArg("-addrlifespan", 7);
     fUseFastIndex = GetBoolArg("-fastindex", true);
     nMinerSleep = GetArg("-minersleep", 500);
-    nMaxConnections = GetArg("-maxconnections", 125);
+    nMaxConnections = GetArg("-maxconnections", 16);
 
     nDerivationMethodIndex = 0;
 
@@ -694,12 +694,17 @@ bool AppInit2(boost::thread_group& threadGroup)
 
     RegisterNodeSignals(GetNodeSignals());
 
+    LogPrintf("   CLIENT_NAME: %s\n", CLIENT_NAME);
+    LogPrintf("CLIENT_VERSION: %s\n", CLIENT_VERSION);
+
     // format user agent, check total size
     strSubVersion = FormatSubVersion(CLIENT_NAME, CLIENT_VERSION, mapMultiArgs.count("-uacomment") ? mapMultiArgs["-uacomment"] : std::vector<string>());
     if (strSubVersion.size() > MAX_SUBVERSION_LENGTH) {
         return InitError(strprintf("Total length of network version string %i exceeds maximum of %i characters. Reduce the number and/or size of uacomments.",
             strSubVersion.size(), MAX_SUBVERSION_LENGTH));
     }
+
+    LogPrintf(" strSubVersion: %s\n", strSubVersion);
 
     if (mapArgs.count("-onlynet")) {
         std::set<enum Network> nets;
@@ -1094,8 +1099,8 @@ bool AppInit2(boost::thread_group& threadGroup)
        A note about convertability. Within Stashedsend pools, each denomination
        is convertable to another.
        For example:
-       1SYNX+1000 == (.1SYNX+100)*10
-       10SYNX+10000 == (1SYNX+1000)*10
+       1XSYN+1000 == (.1XSYN+100)*10
+       10XSYN+10000 == (1XSYN+1000)*10
     */
     stashedSendDenominations.push_back( (1000        * COIN)+1000000 );
     stashedSendDenominations.push_back( (100         * COIN)+100000 );

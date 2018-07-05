@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# Copyright (c) 2012-2017 The Syndicate Core developers
+# Copyright (c) 2012-2017 The Syndicate Cash developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 '''
@@ -77,13 +77,13 @@ f.write("""
 #endif
 """)
 f.write('static const char UNUSED *syndicate_strings[] = {\n')
-f.write('QT_TRANSLATE_NOOP("syndicate-core", "%s"),\n' % (os.getenv('PACKAGE_NAME'),))
-f.write('QT_TRANSLATE_NOOP("syndicate-core", "%s"),\n' % (os.getenv('COPYRIGHT_HOLDERS'),))
+f.write('QT_TRANSLATE_NOOP("syndicate-cash", "%s"),\n' % (os.getenv('PACKAGE_NAME'),))
+f.write('QT_TRANSLATE_NOOP("syndicate-cash", "%s"),\n' % (os.getenv('COPYRIGHT_HOLDERS'),))
 if os.getenv('COPYRIGHT_HOLDERS_SUBSTITUTION') != os.getenv('PACKAGE_NAME'):
-    f.write('QT_TRANSLATE_NOOP("syndicate-core", "%s"),\n' % (os.getenv('COPYRIGHT_HOLDERS_SUBSTITUTION'),))
+    f.write('QT_TRANSLATE_NOOP("syndicate-cash", "%s"),\n' % (os.getenv('COPYRIGHT_HOLDERS_SUBSTITUTION'),))
 messages.sort(key=operator.itemgetter(0))
 for (msgid, msgstr) in messages:
     if msgid != EMPTY:
-        f.write('QT_TRANSLATE_NOOP("syndicate-core", %s),\n' % ('\n'.join(msgid)))
+        f.write('QT_TRANSLATE_NOOP("syndicate-cash", %s),\n' % ('\n'.join(msgid)))
 f.write('};\n')
 f.close()

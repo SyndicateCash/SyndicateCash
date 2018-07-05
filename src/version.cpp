@@ -11,7 +11,7 @@
 // for both syndicated and syndicate-qt, to make it harder for attackers to
 // target servers or GUI users specifically.
 
-const std::string CLIENT_NAME("Syndicate Core");
+const std::string CLIENT_NAME("Syndicate Cash");
 
 // Client version number
 #define CLIENT_VERSION_SUFFIX   ""
