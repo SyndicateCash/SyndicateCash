@@ -185,7 +185,7 @@ void CMasternode::Check()
         return;
     }
 
-    if(!UpdatedWithin(MASTERNODE_EXPIRATSYNX_SECONDS)){
+    if(!UpdatedWithin(MASTERNODE_EXPIRATXSYN_SECONDS)){
         activeState = MASTERNODE_EXPIRED;
         return;
     }

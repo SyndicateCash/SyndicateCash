@@ -58,7 +58,7 @@ void OptionsModel::Init()
 
     // Display
     if (!settings.contains("nDisplayUnit"))
-        settings.setValue("nDisplayUnit", SyndicateUnits::SYNX);
+        settings.setValue("nDisplayUnit", SyndicateUnits::XSYN);
     nDisplayUnit = settings.value("nDisplayUnit").toInt();
     
     fUseBlackTheme = settings.value("fUseBlackTheme", false).toBool();

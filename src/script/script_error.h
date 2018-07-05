@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef SYNX_SCRIPT_SCRIPT_ERROR_H
-#define SYNX_SCRIPT_SCRIPT_ERROR_H
+#ifndef XSYN_SCRIPT_SCRIPT_ERROR_H
+#define XSYN_SCRIPT_SCRIPT_ERROR_H
 
 typedef enum ScriptError_t
 {
@@ -54,4 +54,4 @@ typedef enum ScriptError_t
 
 const char* ScriptErrorString(const ScriptError error);
 
-#endif // SYNX_SCRIPT_SCRIPT_ERROR_H
+#endif // XSYN_SCRIPT_SCRIPT_ERROR_H

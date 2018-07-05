@@ -2,8 +2,8 @@
 // Copyright (c) 2009-2017 The Bitcoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
-#ifndef SYNX_KEYSTORE_H
-#define SYNX_KEYSTORE_H
+#ifndef XSYN_KEYSTORE_H
+#define XSYN_KEYSTORE_H
 
 #include "key.h"
 #include "pubkey.h"

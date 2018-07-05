@@ -2,8 +2,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef SYNX_LIMITEDMAP_H
-#define SYNX_LIMITEDMAP_H
+#ifndef XSYN_LIMITEDMAP_H
+#define XSYN_LIMITEDMAP_H
 
 #include <assert.h> // TODO: remove
 #include <map>

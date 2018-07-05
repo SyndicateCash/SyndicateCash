@@ -4,8 +4,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef SYNX_ALLOCATORS_H
-#define SYNX_ALLOCATORS_H
+#ifndef XSYN_ALLOCATORS_H
+#define XSYN_ALLOCATORS_H
 
 #include "support/cleanse.h"
 
@@ -261,4 +261,4 @@ struct zero_after_free_allocator : public std::allocator<T> {
 // This is exactly like std::string, but with a custom allocator.
 typedef std::basic_string<char, std::char_traits<char>, secure_allocator<char> > SecureString;
 
-#endif // SYNX_ALLOCATORS_H
+#endif // XSYN_ALLOCATORS_H

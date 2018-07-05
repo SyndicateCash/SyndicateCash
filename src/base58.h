@@ -11,8 +11,8 @@
 // - E-mail usually won't line-break if there's no punctuation to break at.
 // - Double-clicking selects the whole number as one word if it's all alphanumeric.
 //
-#ifndef SYNX_BASE58_H
-#define SYNX_BASE58_H
+#ifndef XSYN_BASE58_H
+#define XSYN_BASE58_H
 
 #include "chainparams.h"
 #include "pubkey.h"
@@ -180,4 +180,4 @@ public:
     bool IsScript() const;
 };
 
-#endif // SYNX_BASE58_H
+#endif // XSYN_BASE58_H

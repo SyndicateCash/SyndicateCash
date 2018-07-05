@@ -17,7 +17,7 @@ BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
             VALUE "CompanyName",        "Syndicate Ltd"
-            VALUE "FileDescription",    "syndicate-cli (JSON-RPC client for Syndicate Core)"
+            VALUE "FileDescription",    "syndicate-cli (JSON-RPC client for Syndicate Cash)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "syndicate-cli"
             VALUE "LegalCopyright",     "2018-" STRINGIZE(COPYRIGHT_YEAR) " The Bitcoin and Syndicate developers"

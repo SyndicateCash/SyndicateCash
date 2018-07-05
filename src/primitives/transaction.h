@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef SYNX_PRIMITIVES_TRANSACTSYNX_H
-#define SYNX_PRIMITIVES_TRANSACTSYNX_H
+#ifndef XSYN_PRIMITIVES_TRANSACTXSYN_H
+#define XSYN_PRIMITIVES_TRANSACTXSYN_H
 
 #include "policy/policy.h"
 #include "script/script.h"
@@ -432,4 +432,4 @@ typedef std::shared_ptr<const CTransaction> CTransactionRef;
 static inline CTransactionRef MakeTransactionRef() { return std::make_shared<const CTransaction>(); }
 template <typename Tx> static inline CTransactionRef MakeTransactionRef(Tx&& txIn) { return std::make_shared<const CTransaction>(std::forward<Tx>(txIn)); }
 
-#endif // SYNX_PRIMITIVES_TRANSACTSYNX_H
+#endif // XSYN_PRIMITIVES_TRANSACTXSYN_H

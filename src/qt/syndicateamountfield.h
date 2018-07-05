@@ -1,5 +1,5 @@
-#ifndef SYNXAMOUNTFIELD_H
-#define SYNXAMOUNTFIELD_H
+#ifndef XSYNAMOUNTFIELD_H
+#define XSYNAMOUNTFIELD_H
 
 #include <QWidget>
 #include "util.h"
@@ -62,4 +62,4 @@ private slots:
 
 };
 
-#endif // SYNXAMOUNTFIELD_H
+#endif // XSYNAMOUNTFIELD_H

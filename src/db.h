@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef SYNX_DB_H
-#define SYNX_DB_H
+#ifndef XSYN_DB_H
+#define XSYN_DB_H
 
 #include "serialize.h"
 #include "sync.h"
@@ -309,4 +309,4 @@ public:
     bool static Rewrite(const std::string& strFile, const char* pszSkip = NULL);
 };
 
-#endif // SYNX_DB_H
+#endif // XSYN_DB_H

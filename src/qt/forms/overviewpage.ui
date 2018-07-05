@@ -538,7 +538,7 @@
                <string>Unconfirmed transactions to watch-only addresses</string>
               </property>
               <property name="text">
-               <string notr="true">0.000 000 00 SYNX</string>
+               <string notr="true">0.000 000 00 XSYN</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -563,7 +563,7 @@
                <string>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</string>
               </property>
               <property name="text">
-               <string notr="true">0.000 000 00 SYNX</string>
+               <string notr="true">0.000 000 00 XSYN</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -588,7 +588,7 @@
                <string>Mined balance in watch-only addresses that has not yet matured</string>
               </property>
               <property name="text">
-               <string notr="true">0.000 000 00 SYNX</string>
+               <string notr="true">0.000 000 00 XSYN</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -646,7 +646,7 @@
                <string>Mined balance that has not yet matured</string>
               </property>
               <property name="text">
-               <string notr="true">0.000 000 00 SYNX</string>
+               <string notr="true">0.000 000 00 XSYN</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -691,7 +691,7 @@
                <string>Your current total balance</string>
               </property>
               <property name="text">
-               <string notr="true">0.000 000 00 SYNX</string>
+               <string notr="true">0.000 000 00 XSYN</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -716,7 +716,7 @@
                <string>Current total balance in watch-only addresses</string>
               </property>
               <property name="text">
-               <string notr="true">0.000 000 00 SYNX</string>
+               <string notr="true">0.000 000 00 XSYN</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -758,7 +758,7 @@
                <string>Your current spendable balance</string>
               </property>
               <property name="text">
-               <string notr="true">0.000 000 00 SYNX</string>
+               <string notr="true">0.000 000 00 XSYN</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -790,7 +790,7 @@
                <string>Total of coins that was staked, and do not yet count toward the current balance</string>
               </property>
               <property name="text">
-               <string notr="true">0.000 000 00 SYNX</string>
+               <string notr="true">0.000 000 00 XSYN</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -815,7 +815,7 @@
                <string>Total of coins that was staked in watch-only addresses, and do not yet count toward the current watch-only balance</string>
               </property>
               <property name="text">
-               <string notr="true">0.000 000 00 SYNX</string>
+               <string notr="true">0.000 000 00 XSYN</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -840,7 +840,7 @@
                <string>Your current balance in watch-only addresses</string>
               </property>
               <property name="text">
-               <string notr="true">0.000 000 00 SYNX</string>
+               <string notr="true">0.000 000 00 XSYN</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -1430,7 +1430,7 @@
                </font>
               </property>
               <property name="text">
-               <string notr="true">0 SYNX</string>
+               <string notr="true">0 XSYN</string>
               </property>
              </widget>
             </item>
@@ -1444,7 +1444,7 @@
             <item row="4" column="1">
              <widget class="QLabel" name="labelAmountRounds">
               <property name="text">
-               <string>0 SYNX / 0 Rounds</string>
+               <string>0 XSYN / 0 Rounds</string>
               </property>
              </widget>
             </item>

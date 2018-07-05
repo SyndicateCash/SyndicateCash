@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef SYNX_CHAIN_H
-#define SYNX_CHAIN_H
+#ifndef XSYN_CHAIN_H
+#define XSYN_CHAIN_H
 
 #include "arith_uint256.h"
 #include "primitives/block.h"
@@ -322,4 +322,4 @@ public:
     }
 };
 
-#endif // SYNX_CHAIN_H
+#endif // XSYN_CHAIN_H

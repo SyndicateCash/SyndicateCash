@@ -3,9 +3,9 @@ Release Process
 
 Before every release candidate:
 
-* Update translations (ping wumpus on IRC) see [translation_process.md](https://github.com/syndicate/syndicate/blob/master/doc/translation_process.md#synchronising-translations).
+* Update translations (ping wumpus on IRC) see [translation_process.md](https://github.com/SyndicateCash/SyndicateCash/blob/master/doc/translation_process.md#synchronising-translations).
 
-* Update manpages, see [gen-manpages.sh](https://github.com/syndicate/syndicate/blob/master/contrib/devtools/README.md#gen-manpagessh).
+* Update manpages, see [gen-manpages.sh](https://github.com/SyndicateCash/SyndicateCash/blob/master/contrib/devtools/README.md#gen-manpagessh).
 
 Before every minor and major release:
 
@@ -21,10 +21,10 @@ Before every minor and major release:
 
 Before every major release:
 
-* Update hardcoded [seeds](/contrib/seeds/README.md), see [this pull request](https://github.com/syndicate/syndicate/pull/7415) for an example.
+* Update hardcoded [seeds](/contrib/seeds/README.md), see [this pull request](https://github.com/SyndicateCash/SyndicateCash/pull/7415) for an example.
 * Update [`BLOCK_CHAIN_SIZE`](/src/qt/intro.cpp) to the current size plus some overhead.
 * Update `src/chainparams.cpp` chainTxData with statistics about the transaction count and rate. Use the output of the RPC `getchaintxstats`, see
-  [this pull request](https://github.com/syndicate/syndicate/pull/12270) for an example. Reviewers can verify the results by running `getchaintxstats <window_block_count> <window_last_block_hash>` with the `window_block_count` and `window_last_block_hash` from your output.
+  [this pull request](https://github.com/SyndicateCash/SyndicateCash/pull/12270) for an example. Reviewers can verify the results by running `getchaintxstats <window_block_count> <window_last_block_hash>` with the `window_block_count` and `window_last_block_hash` from your output.
 * Update version of `contrib/gitian-descriptors/*.yml`: usually one'd want to do this on master after branching off the release - but be sure to at least do it before a new major release
 
 ### First time / New builders
@@ -34,10 +34,10 @@ If you're using the automated script (found in [contrib/gitian-build.sh](/contri
 Check out the source code in the following directory hierarchy.
 
     cd /path/to/your/toplevel/build
-    git clone https://github.com/syndicate-core/gitian.sigs.git
-    git clone https://github.com/syndicate-core/syndicate-detached-sigs.git
+    git clone https://github.com/SyndicateCash/gitian.sigs.git
+    git clone https://github.com/SyndicateCash/syndicate-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
-    git clone https://github.com/syndicate/syndicate.git
+    git clone https://github.com/SyndicateCash/SyndicateCash.git
 
 ### Syndicate maintainers/release engineers, suggestion for writing release notes
 
@@ -85,7 +85,7 @@ Ensure gitian-builder is up-to-date:
 
     pushd ./gitian-builder
     mkdir -p inputs
-    wget -P inputs https://syndicatecore.org/cfields/osslsigncode-Backports-to-1.7.1.patch
+    wget -P inputs https://syndicatecash.io/cfields/osslsigncode-Backports-to-1.7.1.patch
     wget -P inputs http://downloads.sourceforge.net/project/osslsigncode/osslsigncode/osslsigncode-1.7.1.tar.gz
     popd
 
@@ -109,7 +109,7 @@ NOTE: Offline builds must use the --url flag to ensure Gitian fetches only from 
 
 The gbuild invocations below <b>DO NOT DO THIS</b> by default.
 
-### Build and sign Syndicate Core for Linux, Windows, and OS X:
+### Build and sign Syndicate Cash for Linux, Windows, and OS X:
 
     pushd ./gitian-builder
     ./bin/gbuild --num-make 2 --memory 3000 --commit syndicate=v${VERSION} ../syndicate/contrib/gitian-descriptors/gitian-linux.yml
@@ -196,7 +196,7 @@ Codesigner only: Commit the detached codesign payloads:
 Non-codesigners: wait for Windows/OS X detached signatures:
 
 - Once the Windows/OS X builds each have 3 matching signatures, they will be signed with their respective release keys.
-- Detached signatures will then be committed to the [syndicate-detached-sigs](https://github.com/syndicate-core/syndicate-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
+- Detached signatures will then be committed to the [syndicate-detached-sigs](https://github.com/SyndicateCash/syndicate-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
 
 Create (and optionally verify) the signed OS X binary:
 
@@ -263,7 +263,7 @@ rm SHA256SUMS
 Note: check that SHA256SUMS itself doesn't end up in SHA256SUMS, which is a spurious/nonsensical entry.
 
 - Upload zips and installers, as well as `SHA256SUMS.asc` from last step, to the syndicate.org server
-  into `/var/www/bin/syndicate-core-${VERSION}`
+  into `/var/www/bin/syndicate-cash-${VERSION}`
 
 - A `.torrent` will appear in the directory after a few minutes. Optionally help seed this torrent. To get the `magnet:` URI use:
 ```bash
@@ -291,11 +291,11 @@ syndicate.org (see below for syndicate.org update instructions).
 
 - Announce the release:
 
-  - syndicate-dev and syndicate-core-dev mailing list
+  - syndicate-dev and syndicate-cash-dev mailing list
 
-  - Syndicate Core announcements list https://syndicatecore.org/en/list/announcements/join/
+  - Syndicate Cash announcements list https://syndicatecash.io/en/list/announcements/join/
 
-  - syndicatecore.org blog post
+  - syndicatecash.io blog post
 
   - Update title of #syndicate on Freenode IRC
 
@@ -305,6 +305,6 @@ syndicate.org (see below for syndicate.org update instructions).
 
   - Archive release notes for the new version to `doc/release-notes/` (branch `master` and branch of the release)
 
-  - Create a [new GitHub release](https://github.com/syndicate/syndicate/releases/new) with a link to the archived release notes.
+  - Create a [new GitHub release](https://github.com/SyndicateCash/SyndicateCash/releases/new) with a link to the archived release notes.
 
   - Celebrate

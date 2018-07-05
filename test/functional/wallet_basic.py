@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (c) 2014-2017 The Syndicate Core developers
+# Copyright (c) 2014-2017 The Syndicate Cash developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """Test the wallet."""
@@ -368,7 +368,7 @@ class WalletTest(SyndicateTestFramework):
             '-reindex',
             '-zapwallettxes=1',
             '-zapwallettxes=2',
-            # disabled until issue is fixed: https://github.com/syndicate/syndicate/issues/7463
+            # disabled until issue is fixed: https://github.com/SyndicateCash/SyndicateCash/issues/7463
             # '-salvagewallet',
         ]
         chainlimit = 6

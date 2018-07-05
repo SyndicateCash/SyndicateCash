@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef SYNX_MEMUSAGE_H
-#define SYNX_MEMUSAGE_H
+#ifndef XSYN_MEMUSAGE_H
+#define XSYN_MEMUSAGE_H
 
 #include "indirectmap.h"
 
@@ -169,4 +169,4 @@ static inline size_t DynamicUsage(const std::unordered_map<X, Y, Z>& m)
 
 }
 
-#endif // SYNX_MEMUSAGE_H
+#endif // XSYN_MEMUSAGE_H

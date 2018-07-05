@@ -1,8 +1,8 @@
 // Copyright (c) 2012 The Bitcoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
-#ifndef SYNX_MRUSET_H
-#define SYNX_MRUSET_H
+#ifndef XSYN_MRUSET_H
+#define XSYN_MRUSET_H
 
 #include <set>
 #include <deque>

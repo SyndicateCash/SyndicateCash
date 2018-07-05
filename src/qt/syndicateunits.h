@@ -53,9 +53,9 @@ public:
      */
     enum Unit
     {
-        SYNX,
-        mSYNX,
-        uSYNX
+        XSYN,
+        mXSYN,
+        uXSYN
     };
 
     enum SeparatorStyle

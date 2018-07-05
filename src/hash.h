@@ -2,8 +2,8 @@
 // Copyright (c) 2009-2017 The Bitcoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
-#ifndef SYNX_HASH_H
-#define SYNX_HASH_H
+#ifndef XSYN_HASH_H
+#define XSYN_HASH_H
 
 #include "uint256.h"
 #include "serialize.h"

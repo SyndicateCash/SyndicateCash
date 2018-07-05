@@ -2,8 +2,8 @@
 // Copyright (c) 2009-2017 The Bitcoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
-#ifndef SYNX_NET_H
-#define SYNX_NET_H
+#ifndef XSYN_NET_H
+#define XSYN_NET_H
 
 #if defined(HAVE_CONFIG_H)
 #include "config/syndicate-config.h"

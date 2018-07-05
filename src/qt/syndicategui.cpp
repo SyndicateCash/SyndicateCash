@@ -98,7 +98,7 @@ SyndicateGUI::SyndicateGUI(QWidget *parent):
     nWeight(0)
 {
     resize(1024, 520);
-    setWindowTitle(tr("Syndicate") + " - " + tr("Wallet"));
+    setWindowTitle(tr("Syndicate Cash") + " - " + tr("Wallet"));
 #ifndef Q_OS_MAC
     qApp->setWindowIcon(QIcon(":icons/syndicate"));
     setWindowIcon(QIcon(":icons/syndicate"));
@@ -514,7 +514,7 @@ void SyndicateGUI::createTrayIcon()
     trayIcon = new QSystemTrayIcon(this);
     trayIconMenu = new QMenu(this);
     trayIcon->setContextMenu(trayIconMenu);
-    trayIcon->setToolTip(tr("Syndicate client"));
+    trayIcon->setToolTip(tr("Syndicate Cash client"));
     trayIcon->setIcon(QIcon(":/icons/toolbar"));
     connect(trayIcon, SIGNAL(activated(QSystemTrayIcon::ActivationReason)),
             this, SLOT(trayIconActivated(QSystemTrayIcon::ActivationReason)));

@@ -93,13 +93,13 @@ for normal IPv4/IPv6 communication, use:
 
 Starting with Tor version 0.2.7.1 it is possible, through Tor's control socket
 API, to create and destroy 'ephemeral' hidden services programmatically.
-Syndicate Core has been updated to make use of this.
+Syndicate Cash has been updated to make use of this.
 
 This means that if Tor is running (and proper authentication has been configured),
-Syndicate Core automatically creates a hidden service to listen on. This will positively 
+Syndicate Cash automatically creates a hidden service to listen on. This will positively
 affect the number of available .onion nodes.
 
-This new feature is enabled by default if Syndicate Core is listening (`-listen`), and
+This new feature is enabled by default if Syndicate Cash is listening (`-listen`), and
 requires a Tor connection to work. It can be explicitly disabled with `-listenonion=0`
 and, if not disabled, configured using the `-torcontrol` and `-torpassword` settings.
 To show verbose debugging information, pass `-debug=tor`.

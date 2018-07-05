@@ -23,6 +23,9 @@
 #include "script/interpreter.h"
 #include "util.h"
 
+#include "consensus/consensus.h"
+
+
 #include <boost/algorithm/string/replace.hpp>
 #include <boost/filesystem.hpp>
 #include <boost/filesystem/fstream.hpp>
@@ -1928,6 +1931,26 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv)
             vRecv >> pfrom->fRelayTxes;
         else
             pfrom->fRelayTxes = true;
+
+
+        // Filter for acceptable versions based on relation to FORK_TIME, ban immediately if filtered
+        int64_t now = GetTime();
+		if ((now < FORK_TIME)
+				&& (pfrom->cleanSubVer.substr(0, 15) == "/Syndicate Core"
+						&& pfrom->cleanSubVer.substr(0, 21)
+								!= "/Syndicate Core:1.9.9"))
+		{
+			Misbehaving(pfrom->GetId(), 100);
+
+		}
+
+		if ((now > FORK_TIME)
+						&& (pfrom->cleanSubVer.substr(0, 18)
+								!= "/Syndicate Cash"))
+		{
+			Misbehaving(pfrom->GetId(), 100);
+		}
+
 
         // Disconnect if we connected to ourself
         if (nNonce == nLocalHostNonce && nNonce > 1)

@@ -8,7 +8,7 @@
 # /etc/syndicate/syndicate.conf
 
 [Unit]
-Description=Syndicate daemon
+Description=Syndicate Cash daemon
 After=network.target
 
 [Service]

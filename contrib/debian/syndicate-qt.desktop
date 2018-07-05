@@ -1,14 +1,14 @@
 [Desktop Entry]
 Version=1.0
-Name=Syndicate Core
-Comment=Connect to the Syndicate P2P Network
-Comment[de]=Verbinde mit dem Syndicate peer-to-peer Netzwerk
-Comment[fr]=Syndicate, monnaie virtuelle cryptographique pair à pair
-Comment[tr]=Syndicate, eşten eşe kriptografik sanal para birimi
+Name=Syndicate Cash
+Comment=Connect to the Syndicate Cash P2P Network
+Comment[de]=Verbinde mit dem Syndicate Cash peer-to-peer Netzwerk
+Comment[fr]=Syndicate Cash, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Syndicate Cash, eşten eşe kriptografik sanal para birimi
 Exec=syndicate-qt %u
 Terminal=false
 Type=Application
 Icon=syndicate128
 MimeType=x-scheme-handler/syndicate;
 Categories=Office;Finance;
-StartupWMClass=Syndicate-qt
+StartupWMClass=SyndicateCash-qt

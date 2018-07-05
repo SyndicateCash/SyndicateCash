@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef SYNX_SERIALIZE_H
-#define SYNX_SERIALIZE_H
+#ifndef XSYN_SERIALIZE_H
+#define XSYN_SERIALIZE_H
 
 #include <string>
 #include <vector>

@@ -8,10 +8,10 @@
 // TODO: make sure this doesn't conflict with config/syndicate-config.h
 
 // Name of client reported in the 'version' message. Report the same name
-// for both iond and syndicate-qt, to make it harder for attackers to
+// for both syndicated and syndicate-qt, to make it harder for attackers to
 // target servers or GUI users specifically.
 
-const std::string CLIENT_NAME("Syndicate Core");
+const std::string CLIENT_NAME("Syndicate Cash");
 
 // Client version number
 #define CLIENT_VERSION_SUFFIX   ""

@@ -1,11 +1,11 @@
-Syndicate Core
+Syndicate Cash
 =============
 
 Setup
 ---------------------
-Syndicate Core is the original Syndicate client and it builds the backbone of the network. It downloads and, by default, stores the entire history of Syndicate transactions (which is currently more than 100 GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
+Syndicate Cash is the original Syndicate client and it builds the backbone of the network. It downloads and, by default, stores the entire history of Syndicate transactions (which is currently more than 100 GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
 
-To download Syndicate Core, visit [syndicatecore.org](https://syndicatecore.org/en/releases/).
+To download Syndicate Cash, visit [syndicatecash.io](https://syndicatecash.io/en/releases/).
 
 Running
 ---------------------
@@ -64,7 +64,7 @@ The Syndicate repo's [root README](/README.md) contains relevant information on 
 
 ### Resources
 * Discuss on the [SyndicateTalk](https://syndicatetalk.org/) forums, in the [Development & Technical Discussion board](https://syndicatetalk.org/index.php?board=6.0).
-* Discuss project-specific development on #syndicate-core-dev on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=syndicate-core-dev).
+* Discuss project-specific development on #syndicate-cash-dev on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=syndicate-cash-dev).
 * Discuss general Syndicate development on #syndicate-dev on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=syndicate-dev).
 
 ### Miscellaneous

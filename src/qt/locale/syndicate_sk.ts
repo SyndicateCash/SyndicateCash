@@ -1970,7 +1970,7 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
 </context>
 <context>
-    <name>syndicate-core</name>
+    <name>syndicate-cash</name>
     <message>
         <source>Syndicate version</source>
         <translation>Syndicate verzia</translation>
@@ -1980,8 +1980,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
         <translation>Použitie:</translation>
     </message>
     <message>
-        <source>Send command to -server or iond</source>
-        <translation>Pošli príkaz na -server alebo iond</translation>
+        <source>Send command to -server or syndicated</source>
+        <translation>Pošli príkaz na -server alebo syndicated</translation>
     </message>
     <message>
         <source>List commands</source>
@@ -2000,8 +2000,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
         <translation>Zadajte konfiguračný súbor (predvolené: syndicate.conf)</translation>
     </message>
     <message>
-        <source>Specify pid file (default: iond.pid)</source>
-        <translation>Zadajte pid súbor (predvolené: iond.pid)</translation>
+        <source>Specify pid file (default: syndicated.pid)</source>
+        <translation>Zadajte pid súbor (predvolené: syndicated.pid)</translation>
     </message>
     <message>
         <source>Specify wallet file (within data directory)</source>

@@ -1865,8 +1865,8 @@ To znamená, že je potřebný poplatek ve výši nejméně %2.</translation>
         <translation>Užití:</translation>
     </message>
     <message>
-        <source>Send command to -server or iond</source>
-        <translation>Pošli příkaz na -server nebo iond</translation>
+        <source>Send command to -server or syndicated</source>
+        <translation>Pošli příkaz na -server nebo syndicated</translation>
     </message>
     <message>
         <source>List commands</source>
@@ -1885,8 +1885,8 @@ To znamená, že je potřebný poplatek ve výši nejméně %2.</translation>
         <translation>Urči konfigurační soubor (výchozí: syndicate.conf)</translation>
     </message>
     <message>
-        <source>Specify pid file (default: iond.pid)</source>
-        <translation>Urči pid soubor (výchozí: iond.pid)</translation>
+        <source>Specify pid file (default: syndicated.pid)</source>
+        <translation>Urči pid soubor (výchozí: syndicated.pid)</translation>
     </message>
     <message>
         <source>Specify wallet file (within data directory)</source>

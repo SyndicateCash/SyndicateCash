@@ -64,9 +64,9 @@ bool AppInit(int argc, char* argv[])
             else 
             {
                 strUsage += "\n" + _("Usage:") + "\n" +
-                    "  iond [options]                     " + strprintf(_("Start %s Daemon"), _(PACKAGE_NAME)) + "\n";
+                    "  syndicated [options]                     " + strprintf(_("Start %s Daemon"), _(PACKAGE_NAME)) + "\n";
 
-                strUsage += "\n" + HelpMessage(HMM_SYNXD);
+                strUsage += "\n" + HelpMessage(HMM_XSYND);
             }
 
             fprintf(stdout, "%s", strUsage.c_str());
@@ -80,7 +80,7 @@ bool AppInit(int argc, char* argv[])
         // Error out when loose non-argument tokens are encountered on command line
         for (int i = 1; i < argc; i++) {
             if (!IsSwitchChar(argv[i][0])) {
-                fprintf(stderr, "Error: Command line contains unexpected token '%s', see iond -h for a list of options.\nAlternatively, see syndicate-cli for wallet commands.\n", argv[i]);
+                fprintf(stderr, "Error: Command line contains unexpected token '%s', see syndicated -h for a list of options.\nAlternatively, see syndicate-cli for wallet commands.\n", argv[i]);
                 exit(EXIT_FAILURE);
             }
         }
@@ -138,7 +138,7 @@ int main(int argc, char* argv[])
 {
     bool fRet = false;
 
-    // Connect iond signal handlers
+    // Connect syndicated signal handlers
     noui_connect();
 
     fRet = AppInit(argc, argv);

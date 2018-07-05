@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef SYNX_SCRIPT_STANDARD_H
-#define SYNX_SCRIPT_STANDARD_H
+#ifndef XSYN_SCRIPT_STANDARD_H
+#define XSYN_SCRIPT_STANDARD_H
 
 #include "policy/policy.h"
 #include "stealth.h"
@@ -61,4 +61,4 @@ CScript GetScriptForDestination(const CTxDestination& dest);
 CScript GetScriptForRawPubKey(const CPubKey& pubkey);
 CScript GetScriptForMultisig(int nRequired, const std::vector<CPubKey>& keys);
 
-#endif // SYNX_SCRIPT_STANDARD_H
+#endif // XSYN_SCRIPT_STANDARD_H

@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef SYNX_PRIMITIVES_BLOCK_H
-#define SYNX_PRIMITIVES_BLOCK_H
+#ifndef XSYN_PRIMITIVES_BLOCK_H
+#define XSYN_PRIMITIVES_BLOCK_H
 
 #include "primitives/transaction.h"
 #include "main.h"
@@ -343,4 +343,4 @@ public:
     int GetHeight();
 };
 
-#endif // SYNX_PRIMITIVES_BLOCK_H
+#endif // XSYN_PRIMITIVES_BLOCK_H

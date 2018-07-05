@@ -2,8 +2,8 @@
 // Copyright (c) 2009-2013 The Bitcoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
-#ifndef SYNX_KEY_H
-#define SYNX_KEY_H
+#ifndef XSYN_KEY_H
+#define XSYN_KEY_H
 
 #include "allocators.h"
 #include "pubkey.h"

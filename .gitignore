@@ -116,3 +116,9 @@ test/cache/*
 
 libsyndicateconsensus.pc
 contrib/devtools/split-debug.sh
+
+src/secp256k1/build-aux/m4/libtool.m4
+
+.cproject
+.project
+

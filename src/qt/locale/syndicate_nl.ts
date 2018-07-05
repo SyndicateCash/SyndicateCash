@@ -1885,8 +1885,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
         <translation>Gebruik:</translation>
     </message>
     <message>
-        <source>Send command to -server or iond</source>
-        <translation>Verstuur commando naar -server of iond</translation>
+        <source>Send command to -server or syndicated</source>
+        <translation>Verstuur commando naar -server of syndicated</translation>
     </message>
     <message>
         <source>List commands</source>
@@ -1905,7 +1905,7 @@ Dit betekend dat een fee van %2 is vereist.</translation>
         <translation>Selecteer configuratie bestand (standaard: syndicate.conf)</translation>
     </message>
     <message>
-        <source>Specify pid file (default: iond.pid)</source>
+        <source>Specify pid file (default: syndicated.pid)</source>
         <translation>Selecteer pid bestand (standaard: syndicate.conf)</translation>
     </message>
     <message>

@@ -1865,8 +1865,8 @@ Cela veut dire que des frais d'un minimum de %1 par kb sont requis</translation>
         <translation>Utilisation :</translation>
     </message>
     <message>
-        <source>Send command to -server or iond</source>
-        <translation>Envoyer commande à -server ou iond</translation>
+        <source>Send command to -server or syndicated</source>
+        <translation>Envoyer commande à -server ou syndicated</translation>
     </message>
     <message>
         <source>List commands</source>
@@ -1885,8 +1885,8 @@ Cela veut dire que des frais d'un minimum de %1 par kb sont requis</translation>
         <translation>Spécifier le fichier de configuration (defaut: syndicate.conf)</translation>
     </message>
     <message>
-        <source>Specify pid file (default: iond.pid)</source>
-        <translation>Spécifier le fichier pid (defaut: iond.pid)
+        <source>Specify pid file (default: syndicated.pid)</source>
+        <translation>Spécifier le fichier pid (defaut: syndicated.pid)
 </translation>
     </message>
     <message>

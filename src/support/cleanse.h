@@ -3,11 +3,11 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef SYNX_SUPPORT_CLEANSE_H
-#define SYNX_SUPPORT_CLEANSE_H
+#ifndef XSYN_SUPPORT_CLEANSE_H
+#define XSYN_SUPPORT_CLEANSE_H
 
 #include <stdlib.h>
 
 void memory_cleanse(void *ptr, size_t len);
 
-#endif // SYNX_SUPPORT_CLEANSE_H
+#endif // XSYN_SUPPORT_CLEANSE_H

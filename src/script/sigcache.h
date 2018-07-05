@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef SYNX_SCRIPT_SIGCACHE_H
-#define SYNX_SCRIPT_SIGCACHE_H
+#ifndef XSYN_SCRIPT_SIGCACHE_H
+#define XSYN_SCRIPT_SIGCACHE_H
 
 #include "pubkey.h"
 
@@ -31,4 +31,4 @@ public:
     void Set(const uint256 &hash, const std::vector<unsigned char>& vchSig, const CPubKey& pubKey);
 };
 
-#endif // SYNX_SCRIPT_SIGCACHE_H
+#endif // XSYN_SCRIPT_SIGCACHE_H

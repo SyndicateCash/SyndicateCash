@@ -1,12 +1,12 @@
 Benchmarking
 ============
 
-Syndicate Core has an internal benchmarking framework, with benchmarks
+Syndicate Cash has an internal benchmarking framework, with benchmarks
 for cryptographic algorithms such as SHA1, SHA256, SHA512 and RIPEMD160. As well as the rolling bloom filter.
 
 Running
 ---------------------
-After compiling syndicate-core, the benchmarks can be run with:
+After compiling syndicate-cash, the benchmarks can be run with:
 
     src/bench/bench_syndicate
 

@@ -20,7 +20,7 @@
 #include <QSettings>
 #include <QTimer>
 
-#define DECORATSYNX_SIZE 64
+#define DECORATXSYN_SIZE 64
 #define ICON_OFFSET 16
 #define NUM_ITEMS 6
 
@@ -28,7 +28,7 @@ class TxViewDelegate : public QAbstractItemDelegate
 {
     Q_OBJECT
 public:
-    TxViewDelegate(): QAbstractItemDelegate(), unit(SyndicateUnits::SYNX)
+    TxViewDelegate(): QAbstractItemDelegate(), unit(SyndicateUnits::XSYN)
     {
 
     }
@@ -41,8 +41,8 @@ public:
         QIcon icon = qvariant_cast<QIcon>(index.data(Qt::DecorationRole));
         QRect mainRect = option.rect;
         mainRect.moveLeft(ICON_OFFSET);
-        QRect decorationRect(mainRect.topLeft(), QSize(DECORATSYNX_SIZE, DECORATSYNX_SIZE));
-        int xspace = DECORATSYNX_SIZE + 8;
+        QRect decorationRect(mainRect.topLeft(), QSize(DECORATXSYN_SIZE, DECORATXSYN_SIZE));
+        int xspace = DECORATXSYN_SIZE + 8;
         int ypad = 6;
         int halfheight = (mainRect.height() - 2*ypad)/2;
         QRect amountRect(mainRect.left() + xspace, mainRect.top()+ypad, mainRect.width() - xspace - ICON_OFFSET, halfheight);
@@ -99,7 +99,7 @@ public:
 
     inline QSize sizeHint(const QStyleOptionViewItem &option, const QModelIndex &index) const
     {
-        return QSize(DECORATSYNX_SIZE, DECORATSYNX_SIZE);
+        return QSize(DECORATXSYN_SIZE, DECORATXSYN_SIZE);
     }
 
     int unit;
@@ -127,8 +127,8 @@ OverviewPage::OverviewPage(QWidget *parent) :
 
     // Recent transactions
     ui->listTransactions->setItemDelegate(txdelegate);
-    ui->listTransactions->setIconSize(QSize(DECORATSYNX_SIZE, DECORATSYNX_SIZE));
-    ui->listTransactions->setMinimumHeight(NUM_ITEMS * (DECORATSYNX_SIZE + 2));
+    ui->listTransactions->setIconSize(QSize(DECORATXSYN_SIZE, DECORATXSYN_SIZE));
+    ui->listTransactions->setMinimumHeight(NUM_ITEMS * (DECORATXSYN_SIZE + 2));
     ui->listTransactions->setAttribute(Qt::WA_MacShowFocusRect, false);
     ui->listTransactions->setMinimumWidth(300);
 
@@ -285,7 +285,7 @@ void OverviewPage::setWalletModel(WalletModel *model)
         connect(model, SIGNAL(notifyWatchonlyChanged(bool)), this, SLOT(updateWatchOnlyLabels(bool)));
     }
 
-    // update the display unit, to not use the default ("SYNX")
+    // update the display unit, to not use the default ("XSYN")
     updateDisplayUnit();
 }
 

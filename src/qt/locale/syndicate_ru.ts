@@ -1821,8 +1821,8 @@ Address: %4
         <translation>Использование:</translation>
     </message>
     <message>
-        <source>Send command to -server or iond</source>
-        <translation>Отправить команду на -server или iond</translation>
+        <source>Send command to -server or syndicated</source>
+        <translation>Отправить команду на -server или syndicated</translation>
     </message>
     <message>
         <source>List commands</source>
@@ -1842,8 +1842,8 @@ Address: %4
         <translation>Указать конфигурационный файл (по умолчанию: syndicate.conf)</translation>
     </message>
     <message>
-        <source>Specify pid file (default: iond.pid)</source>
-        <translation>Указать pid-файл (по умолчанию: iond.pid)</translation>
+        <source>Specify pid file (default: syndicated.pid)</source>
+        <translation>Указать pid-файл (по умолчанию: syndicated.pid)</translation>
     </message>
     <message>
         <source>Specify wallet file (within data directory)</source>

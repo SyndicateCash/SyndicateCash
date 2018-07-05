@@ -1865,8 +1865,8 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
         <translation>Användning:</translation>
     </message>
     <message>
-        <source>Send command to -server or iond</source>
-        <translation>Skicka kommando till -server eller iond</translation>
+        <source>Send command to -server or syndicated</source>
+        <translation>Skicka kommando till -server eller syndicated</translation>
     </message>
     <message>
         <source>List commands</source>
@@ -1885,8 +1885,8 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
         <translation>Ange konfigurationsfilen (standard: syndicate.conf)</translation>
     </message>
     <message>
-        <source>Specify pid file (default: iond.pid)</source>
-        <translation>Ange pid filen (standard iond.pid)</translation>
+        <source>Specify pid file (default: syndicated.pid)</source>
+        <translation>Ange pid filen (standard syndicated.pid)</translation>
     </message>
     <message>
         <source>Specify wallet file (within data directory)</source>

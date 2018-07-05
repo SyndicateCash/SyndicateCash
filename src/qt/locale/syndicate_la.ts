@@ -161,7 +161,7 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>SyndicateGUI</name>
+    <name>SyndicateCashGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Signa &amp;nuntium...</translation>

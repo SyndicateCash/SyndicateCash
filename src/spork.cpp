@@ -1,4 +1,4 @@
-// Copyright (c) 2015 The SYNX developers
+// Copyright (c) 2015 The XSYN developers
 // Copyright (c) 2009-2012 The Darkcoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.

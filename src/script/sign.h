@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef SYNX_SCRIPT_SIGN_H
-#define SYNX_SCRIPT_SIGN_H
+#ifndef XSYN_SCRIPT_SIGN_H
+#define XSYN_SCRIPT_SIGN_H
 
 #include "script/interpreter.h"
 #include "script/script.h"
@@ -91,4 +91,4 @@ void UpdateTransaction(CMutableTransaction& tx, unsigned int nIn, const Signatur
 bool Sign1(const CKeyID& address, const CKeyStore& keystore, uint256 hash, int nHashType, CScript& scriptSigRet);
 bool SignN(const vector<valtype>& multisigdata, const CKeyStore& keystore, uint256 hash, int nHashType, CScript& scriptSigRet);
 
-#endif  // SYNX_SCRIPT_SIGN_H
+#endif  // XSYN_SCRIPT_SIGN_H

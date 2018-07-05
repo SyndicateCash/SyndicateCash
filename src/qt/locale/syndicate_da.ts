@@ -1849,8 +1849,8 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
         <translation>Anvendelse:</translation>
     </message>
     <message>
-        <source>Send command to -server or iond</source>
-        <translation>Send kommando til-server eller iond</translation>
+        <source>Send command to -server or syndicated</source>
+        <translation>Send kommando til-server eller syndicated</translation>
     </message>
     <message>
         <source>List commands</source>
@@ -1869,8 +1869,8 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
         <translation>Angiv konfigurationsfil (default: syndicate.conf)</translation>
     </message>
     <message>
-        <source>Specify pid file (default: iond.pid)</source>
-        <translation>Angiv pid fil (standard: iond.pid)</translation>
+        <source>Specify pid file (default: syndicated.pid)</source>
+        <translation>Angiv pid fil (standard: syndicated.pid)</translation>
     </message>
     <message>
         <source>Specify wallet file (within data directory)</source>

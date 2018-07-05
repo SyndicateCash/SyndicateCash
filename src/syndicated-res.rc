@@ -17,13 +17,13 @@ BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
             VALUE "CompanyName",        "Syndicate Ltd"
-            VALUE "FileDescription",    "syndicated (OSS daemon/client for Syndicate Core)"
+            VALUE "FileDescription",    "syndicated (OSS daemon/client for Syndicate Cash)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "syndicated"
-            VALUE "LegalCopyright",     "2018-" STRINGIZE(COPYRIGHT_YEAR) " The Bitcoin and Syndicate developers"
+            VALUE "LegalCopyright",     "2018-" STRINGIZE(COPYRIGHT_YEAR) " The Bitcoin and Syndicate Cash developers"
             VALUE "LegalTrademarks1",   "Distributed under the MIT software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "syndicatedd.exe"
-            VALUE "ProductName",        "syndicatedd"
+            VALUE "OriginalFilename",   "syndicated.exe"
+            VALUE "ProductName",        "syndicated"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

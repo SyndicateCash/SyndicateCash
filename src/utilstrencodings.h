@@ -6,8 +6,8 @@
 /**
  * Utilities for converting data from/to strings.
  */
-#ifndef SYNX_UTILSTRENCODINGS_H
-#define SYNX_UTILSTRENCODINGS_H
+#ifndef XSYN_UTILSTRENCODINGS_H
+#define XSYN_UTILSTRENCODINGS_H
 
 #include <stdint.h>
 #include <string>
@@ -113,4 +113,4 @@ bool TimingResistantEqual(const T& a, const T& b)
  */
  bool ParseFixedPoint(const std::string &val, int decimals, int64_t *amount_out);
  
-#endif // SYNX_UTILSTRENCODINGS_H
+#endif // XSYN_UTILSTRENCODINGS_H

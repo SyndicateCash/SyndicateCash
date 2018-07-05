@@ -2,8 +2,8 @@
 // Copyright (c) 2009-2017 The Bitcoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
-#ifndef SYNX_INIT_H
-#define SYNX_INIT_H
+#ifndef XSYN_INIT_H
+#define XSYN_INIT_H
 
 #include "wallet.h"
 
@@ -19,8 +19,8 @@ bool AppInit2(boost::thread_group& threadGroup);
 
 /** The help message mode determines what help message to show */
 enum HelpMessageMode {
-    HMM_SYNXD,
-    HMM_SYNX_QT
+    HMM_XSYND,
+    HMM_XSYN_QT
 };
 
 /** Help for options shared between UI and daemon (for -help) */

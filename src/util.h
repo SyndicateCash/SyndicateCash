@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef SYNX_UTIL_H
-#define SYNX_UTIL_H
+#ifndef XSYN_UTIL_H
+#define XSYN_UTIL_H
 
 #if defined(HAVE_CONFIG_H)
 #include "config/syndicate-config.h"

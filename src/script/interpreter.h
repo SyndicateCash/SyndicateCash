@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef SYNX_SCRIPT_INTERPRETER_H
-#define SYNX_SCRIPT_INTERPRETER_H
+#ifndef XSYN_SCRIPT_INTERPRETER_H
+#define XSYN_SCRIPT_INTERPRETER_H
 
 #include "script_error.h"
 #include "primitives/transaction.h"
@@ -77,4 +77,4 @@ bool VerifyScript(const CScript& scriptSig, const CScript& scriptPubKey, unsigne
 
 bool VerifySignature(const CTransaction& txFrom, const CTransaction& txTo, unsigned int nIn, unsigned int flags, int nHashType);
 
-#endif // SYNX_SCRIPT_INTERPRETER_H
+#endif // XSYN_SCRIPT_INTERPRETER_H

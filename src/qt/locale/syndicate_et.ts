@@ -1162,7 +1162,7 @@ Aadress: %4⏎</translation>
     <name>WalletModel</name>
     </context>
 <context>
-    <name>syndicate-core</name>
+    <name>syndicate-cash</name>
     <message>
         <source>Usage:</source>
         <translation>Kasutus:</translation>

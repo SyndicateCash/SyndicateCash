@@ -1865,8 +1865,8 @@ Esto significa que se requiere una cuota de al menos %2.</translation>
         <translation>Uso:</translation>
     </message>
     <message>
-        <source>Send command to -server or iond</source>
-        <translation>Envía un comando a -server o iond</translation>
+        <source>Send command to -server or syndicated</source>
+        <translation>Envía un comando a -server o syndicated</translation>
     </message>
     <message>
         <source>List commands</source>
@@ -1888,8 +1888,8 @@ Esto significa que se requiere una cuota de al menos %2.</translation>
         <translation>Especifica un archivo de configuración (por defecto: syndicate.conf)</translation>
     </message>
     <message>
-        <source>Specify pid file (default: iond.pid)</source>
-        <translation>Especifica un archivo pid (por defecto: iond.pid)</translation>
+        <source>Specify pid file (default: syndicated.pid)</source>
+        <translation>Especifica un archivo pid (por defecto: syndicated.pid)</translation>
     </message>
     <message>
         <source>Specify wallet file (within data directory)</source>

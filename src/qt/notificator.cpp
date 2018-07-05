@@ -22,7 +22,7 @@
 #endif
 
 // https://wiki.ubuntu.com/NotificationDevelopmentGuidelines recommends at least 128
-const int FREEDESKTOP_NOTIFICATSYNX_ICON_SIZE = 128;
+const int FREEDESKTOP_NOTIFICATXSYN_ICON_SIZE = 128;
 
 Notificator::Notificator(const QString &programName, QSystemTrayIcon *trayicon, QWidget *parent):
     QObject(parent),
@@ -190,7 +190,7 @@ void Notificator::notifyDBus(Class cls, const QString &title, const QString &tex
     {
         tmpicon = icon;
     }
-    hints["icon_data"] = FreedesktopImage::toVariant(tmpicon.pixmap(FREEDESKTOP_NOTIFICATSYNX_ICON_SIZE).toImage());
+    hints["icon_data"] = FreedesktopImage::toVariant(tmpicon.pixmap(FREEDESKTOP_NOTIFICATXSYN_ICON_SIZE).toImage());
     args.append(hints);
 
     // Timeout (in msec)

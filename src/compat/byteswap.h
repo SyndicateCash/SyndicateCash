@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef SYNX_COMPAT_BYTESWAP_H
-#define SYNX_COMPAT_BYTESWAP_H
+#ifndef XSYN_COMPAT_BYTESWAP_H
+#define XSYN_COMPAT_BYTESWAP_H
 
 #if defined(HAVE_CONFIG_H)
 #include "config/syndicate-config.h"
@@ -63,4 +63,4 @@ inline uint64_t bswap_64(uint64_t x)
 
 #endif // defined(__APPLE__)
 
-#endif // SYNX_COMPAT_BYTESWAP_H
+#endif // XSYN_COMPAT_BYTESWAP_H

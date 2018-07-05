@@ -1933,10 +1933,10 @@ bool CStashedsendPool::IsCompatibleWithSession(int64_t nDenom, CTransaction txCo
 void CStashedsendPool::GetDenominationsToString(int nDenom, std::string& strDenom){
     // Function returns as follows:
     //
-    // bit 0 - 100SYNX+1 ( bit on if present )
-    // bit 1 - 10SYNX+1
-    // bit 2 - 1SYNX+1
-    // bit 3 - .1SYNX+1
+    // bit 0 - 100XSYN+1 ( bit on if present )
+    // bit 1 - 10XSYN+1
+    // bit 2 - 1XSYN+1
+    // bit 3 - .1XSYN+1
     // bit 3 - non-denom
 
 
@@ -2009,10 +2009,10 @@ int CStashedsendPool::GetDenominations(const std::vector<CTxOut>& vout, bool fSi
 
     // Function returns as follows:
     //
-    // bit 0 - 100SYNX+1 ( bit on if present )
-    // bit 1 - 10SYNX+1
-    // bit 2 - 1SYNX+1
-    // bit 3 - .1SYNX+1
+    // bit 0 - 100XSYN+1 ( bit on if present )
+    // bit 1 - 10XSYN+1
+    // bit 2 - 1XSYN+1
+    // bit 3 - .1XSYN+1
 
     return denom;
 }

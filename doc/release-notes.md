@@ -1,20 +1,20 @@
 (note: this is a temporary file, to be added-to by anybody, and moved to
 release-notes at release time)
 
-Syndicate Core version *version* is now available from:
+Syndicate Cash version *version* is now available from:
 
-  <https://syndicatecore.org/bin/syndicate-core-*version*/>
+  <https://syndicatecash.io/bin/syndicate-cash-*version*/>
 
 This is a new major version release, including new features, various bugfixes
 and performance improvements, as well as updated translations.
 
 Please report bugs using the issue tracker at GitHub:
 
-  <https://github.com/syndicate/syndicate/issues>
+  <https://github.com/SyndicateCash/SyndicateCash/issues>
 
 To receive security and update notifications, please subscribe to:
 
-  <https://syndicatecore.org/en/list/announcements/join/>
+  <https://syndicatecash.io/en/list/announcements/join/>
 
 How to Upgrade
 ==============
@@ -47,10 +47,10 @@ processing the entire blockchain.
 Compatibility
 ==============
 
-Syndicate Core is extensively tested on multiple operating systems using
+Syndicate Cash is extensively tested on multiple operating systems using
 the Linux kernel, macOS 10.8+, and Windows Vista and later. Windows XP is not supported.
 
-Syndicate Core should also work on most other Unix-like systems but is not
+Syndicate Cash should also work on most other Unix-like systems but is not
 frequently tested on them.
 
 Notable changes

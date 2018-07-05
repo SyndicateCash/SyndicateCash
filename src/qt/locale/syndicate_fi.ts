@@ -1944,8 +1944,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
         <translation>Käyttö:</translation>
     </message>
     <message>
-        <source>Send command to -server or iond</source>
-        <translation>Syötä komento kohteeseen -server tai iond</translation>
+        <source>Send command to -server or syndicated</source>
+        <translation>Syötä komento kohteeseen -server tai syndicated</translation>
     </message>
     <message>
         <source>List commands</source>
@@ -1964,7 +1964,7 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
         <translation>Määritä asetustiedosto (oletus: syndicate.conf)</translation>
     </message>
     <message>
-        <source>Specify pid file (default: iond.pid)</source>
+        <source>Specify pid file (default: syndicated.pid)</source>
         <translation>Määritä prosessitiedosto (oletus: syndicate.pid)</translation>
     </message>
     <message>
