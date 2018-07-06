@@ -72,9 +72,9 @@ script:
     - mkdir build && cd build
     - ../configure --cache-file=config.cache $SYNDICATE_CONFIG_ALL $SYNDICATE_CONFIG || ( cat config.log && false)
     - make distdir VERSION=$HOST
-    - cd SyndicateCash-$HOST
-    - ./configure --cache-file=../config.cache $SYNDICATE_CONFIG_ALL $SYNDICATE_CONFIG || ( cat config.log && false)
-    - make $MAKEJOBS $GOAL || ( echo "Build failure. Verbose build follows." && make $GOAL V=1 ; false )
+#    - cd SyndicateCash-$HOST
+#    - ./configure --cache-file=../config.cache $SYNDICATE_CONFIG_ALL $SYNDICATE_CONFIG || ( cat config.log && false)
+#    - make $MAKEJOBS $GOAL || ( echo "Build failure. Verbose build follows." && make $GOAL V=1 ; false )
     - export LD_LIBRARY_PATH=$TRAVIS_BUILD_DIR/depends/$HOST/lib
 #    - if [ "$RUN_TESTS" = "true" ]; then travis_wait 30 make $MAKEJOBS check VERBOSE=1; fi
 #    - if [ "$TRAVIS_EVENT_TYPE" = "cron" ]; then extended="--extended --exclude feature_pruning,feature_dbcrash"; fi
