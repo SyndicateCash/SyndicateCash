@@ -1,10 +1,12 @@
-﻿SyndicateQt is an open source community driven project.
-Join the community on Telegram https://t.me/syndicateLtd
+[![Build Status](https://travis-ci.org/SyndicateCash/SyndicateCash.svg?branch=master)](https://travis-ci.org/SyndicateCash/SyndicateCash)
 
-## SyndicateQt
+Syndicate Cash is an open source community driven project.
+Join the community on Telegram https://t.me/SyndicateCash
 
-First and foremost, we have the pleasure to announce that due to intense work and outstanding support from the community, Syndicate coin has been saved, and from now on, things will only get better.
-We would like to officially thank the past developers for their significant work with Syndicate. 
+## Syndicate Cash
+
+First and foremost, we have the pleasure to announce that due to intense work and outstanding support from the community, Syndicate Cash has been saved, and from now on, things will only get better.
+We would like to officially thank the past developers for their significant work with Syndicate Cash. 
 They managed to place us in a right strategic direction, leaving a legacy of high paying Masternodes and POS rewards, but now, it is the time for the community to move forward.
 
 
@@ -80,7 +82,7 @@ Difficulty Retarget - Every Block
 Port - 9999
 RPC Port - 22348
  
-``` LICENSE: The MIT License (MIT) Copyright (c) 2014-2017 The Syndicate Developers, see LICENSE for additional detail 
+``` LICENSE: The MIT License (MIT) Copyright (c) 2014-2017 The Syndicate Cash Developers, see LICENSE for additional detail 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation 
 files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, 
 modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software 
