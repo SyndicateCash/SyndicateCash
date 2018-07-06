@@ -73,7 +73,7 @@ script:
 #    - ../configure --cache-file=config.cache $SYNDICATE_CONFIG_ALL $SYNDICATE_CONFIG || ( cat config.log && false)
 #    - make distdir VERSION=$HOST
 #    - cd SyndicateCash-$HOST
-#    - ./configure --cache-file=../config.cache $SYNDICATE_CONFIG_ALL $SYNDICATE_CONFIG || ( cat config.log && false)
+    - ./configure --cache-file=../config.cache $SYNDICATE_CONFIG_ALL $SYNDICATE_CONFIG || ( cat config.log && false)
 #    - make $MAKEJOBS $GOAL || ( echo "Build failure. Verbose build follows." && make $GOAL V=1 ; false )
     - make $MAKEJOBS  || ( echo "Build failure. Verbose build follows." && make  V=1 ; false )
     - export LD_LIBRARY_PATH=$TRAVIS_BUILD_DIR/depends/$HOST/lib
